@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\img\\doctor\\1.png",
+      "PackagePath": "staticwebassets\\img\\doctor\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\img\\doctor\\2.png",
+      "PackagePath": "staticwebassets\\img\\doctor\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\img\\doctor\\3.png",
+      "PackagePath": "staticwebassets\\img\\doctor\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\img\\doctor\\4.png",
+      "PackagePath": "staticwebassets\\img\\doctor\\4.png"
+    },
+    {
       "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -243,6 +259,1026 @@
     {
       "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\animate.css",
+      "PackagePath": "staticwebassets\\template\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\template\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\template\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\template\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\gijgo.css",
+      "PackagePath": "staticwebassets\\template\\css\\gijgo.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\template\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\template\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\template\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\slicknav.css",
+      "PackagePath": "staticwebassets\\template\\css\\slicknav.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\style.css",
+      "PackagePath": "staticwebassets\\template\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\style.map",
+      "PackagePath": "staticwebassets\\template\\css\\style.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\theme-default.css",
+      "PackagePath": "staticwebassets\\template\\css\\theme-default.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\theme-default.map",
+      "PackagePath": "staticwebassets\\template\\css\\theme-default.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\template\\css\\themify-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\template\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\template\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\template\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\template\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\template\\fonts\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\template\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\template\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\flaticon.css",
+      "PackagePath": "staticwebassets\\template\\fonts\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\template\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\template\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\template\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\template\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\template\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\gijgo-material.eot",
+      "PackagePath": "staticwebassets\\template\\fonts\\gijgo-material.eot"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\gijgo-material.svg",
+      "PackagePath": "staticwebassets\\template\\fonts\\gijgo-material.svg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\gijgo-material.ttf",
+      "PackagePath": "staticwebassets\\template\\fonts\\gijgo-material.ttf"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\gijgo-material.woff",
+      "PackagePath": "staticwebassets\\template\\fonts\\gijgo-material.woff"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\template\\fonts\\themify.eot"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\template\\fonts\\themify.svg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\template\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\template\\fonts\\themify.woff"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\about\\1.png",
+      "PackagePath": "staticwebassets\\template\\img\\about\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\about\\2.png",
+      "PackagePath": "staticwebassets\\template\\img\\about\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\about\\business.png",
+      "PackagePath": "staticwebassets\\template\\img\\about\\business.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\banner\\about_banner.png",
+      "PackagePath": "staticwebassets\\template\\img\\banner\\about_banner.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\banner\\banner.png",
+      "PackagePath": "staticwebassets\\template\\img\\banner\\banner.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\banner\\banner2.png",
+      "PackagePath": "staticwebassets\\template\\img\\banner\\banner2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\banner\\bradcam.png",
+      "PackagePath": "staticwebassets\\template\\img\\banner\\bradcam.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\banner\\bradcam2.png",
+      "PackagePath": "staticwebassets\\template\\img\\banner\\bradcam2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\banner\\bradcam3.png",
+      "PackagePath": "staticwebassets\\template\\img\\banner\\bradcam3.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\banner\\emergency-1.png",
+      "PackagePath": "staticwebassets\\template\\img\\banner\\emergency-1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\banner\\emergency-2.png",
+      "PackagePath": "staticwebassets\\template\\img\\banner\\emergency-2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\author.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\author.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\blog_1.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\blog_1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\blog_2.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\blog_2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\blog_3.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\blog_3.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\blog_4.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\blog_4.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\learn_about_bg.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\learn_about_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\single_blog_1.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\single_blog_1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\single_blog_2.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\single_blog_2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\single_blog_3.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\single_blog_3.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\single_blog_4.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\single_blog_4.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\single_blog_5.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\single_blog_5.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\blog\\slide_thumb_1.png",
+      "PackagePath": "staticwebassets\\template\\img\\blog\\slide_thumb_1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\comment\\comment_1.png",
+      "PackagePath": "staticwebassets\\template\\img\\comment\\comment_1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\comment\\comment_2.png",
+      "PackagePath": "staticwebassets\\template\\img\\comment\\comment_2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\comment\\comment_3.png",
+      "PackagePath": "staticwebassets\\template\\img\\comment\\comment_3.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\department\\1.png",
+      "PackagePath": "staticwebassets\\template\\img\\department\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\department\\2.png",
+      "PackagePath": "staticwebassets\\template\\img\\department\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\department\\3.png",
+      "PackagePath": "staticwebassets\\template\\img\\department\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\department\\4.png",
+      "PackagePath": "staticwebassets\\template\\img\\department\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\department\\5.png",
+      "PackagePath": "staticwebassets\\template\\img\\department\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\department\\6.png",
+      "PackagePath": "staticwebassets\\template\\img\\department\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\a.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\a2.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\a2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\d.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\disabled-check.png",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\disabled-check.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\disabled-radio.png",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\disabled-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\f1.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\f2.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\f3.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\f4.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\f5.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\f5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\f6.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\f6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\f7.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\f7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\f8.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\f8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\g1.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\g1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\g2.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\g2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\g3.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\g3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\g4.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\g4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\g5.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\g5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\g6.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\g6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\g7.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\g7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\g8.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\g8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\primary-check.png",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\primary-check.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\primary-radio.png",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\primary-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\success-check.png",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\success-check.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\elements\\success-radio.png",
+      "PackagePath": "staticwebassets\\template\\img\\elements\\success-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\experts\\1.png",
+      "PackagePath": "staticwebassets\\template\\img\\experts\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\experts\\2.png",
+      "PackagePath": "staticwebassets\\template\\img\\experts\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\experts\\3.png",
+      "PackagePath": "staticwebassets\\template\\img\\experts\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\experts\\4.png",
+      "PackagePath": "staticwebassets\\template\\img\\experts\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\experts\\5.png",
+      "PackagePath": "staticwebassets\\template\\img\\experts\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\experts\\6.png",
+      "PackagePath": "staticwebassets\\template\\img\\experts\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\experts\\7.png",
+      "PackagePath": "staticwebassets\\template\\img\\experts\\7.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\experts\\8.png",
+      "PackagePath": "staticwebassets\\template\\img\\experts\\8.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\experts\\9.png",
+      "PackagePath": "staticwebassets\\template\\img\\experts\\9.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\template\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\template\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\footer_logo.png",
+      "PackagePath": "staticwebassets\\template\\img\\footer_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\instragram\\1.png",
+      "PackagePath": "staticwebassets\\template\\img\\instragram\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\instragram\\2.png",
+      "PackagePath": "staticwebassets\\template\\img\\instragram\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\instragram\\3.png",
+      "PackagePath": "staticwebassets\\template\\img\\instragram\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\instragram\\4.png",
+      "PackagePath": "staticwebassets\\template\\img\\instragram\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\instragram\\5.png",
+      "PackagePath": "staticwebassets\\template\\img\\instragram\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\logo.png",
+      "PackagePath": "staticwebassets\\template\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\offers\\1.png",
+      "PackagePath": "staticwebassets\\template\\img\\offers\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\offers\\2.png",
+      "PackagePath": "staticwebassets\\template\\img\\offers\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\offers\\3.png",
+      "PackagePath": "staticwebassets\\template\\img\\offers\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\next.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\post_1.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\post_1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\post_10.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\post_10.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\post_2.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\post_2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\post_3.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\post_3.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\post_4.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\post_4.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\post_5.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\post_5.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\post_6.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\post_6.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\post_7.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\post_7.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\post_8.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\post_8.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\post_9.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\post_9.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\post\\preview.png",
+      "PackagePath": "staticwebassets\\template\\img\\post\\preview.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\rooms\\1.png",
+      "PackagePath": "staticwebassets\\template\\img\\rooms\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\rooms\\2.png",
+      "PackagePath": "staticwebassets\\template\\img\\rooms\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\rooms\\3.png",
+      "PackagePath": "staticwebassets\\template\\img\\rooms\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\rooms\\4.png",
+      "PackagePath": "staticwebassets\\template\\img\\rooms\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\testmonial\\1.png",
+      "PackagePath": "staticwebassets\\template\\img\\testmonial\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\testmonial\\2.png",
+      "PackagePath": "staticwebassets\\template\\img\\testmonial\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\img\\video\\video.png",
+      "PackagePath": "staticwebassets\\template\\img\\video\\video.png"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\ajax-form.js",
+      "PackagePath": "staticwebassets\\template\\js\\ajax-form.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\contact.js",
+      "PackagePath": "staticwebassets\\template\\js\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\gijgo.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\gijgo.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\imagesloaded.pkgd.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\imagesloaded.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\jquery.form.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery.form.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\jquery.scrollUp.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery.scrollUp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\jquery.slicknav.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery.slicknav.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\mail-script.js",
+      "PackagePath": "staticwebassets\\template\\js\\mail-script.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\main.js",
+      "PackagePath": "staticwebassets\\template\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\nice-select.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\nice-select.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\template\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\scrollIt.js",
+      "PackagePath": "staticwebassets\\template\\js\\scrollIt.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\vendor\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\vendor\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\vendor\\modernizr-3.5.0.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\vendor\\modernizr-3.5.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\template\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\template\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_about.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_about.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_blog.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_blog_part.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_blog_part.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_bradcam.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_bradcam.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_btn.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_btn.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_contact.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_department.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_department.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_elements.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_elements.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_emergency_contact.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_emergency_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_experts.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_experts.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_extend.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_footer.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_header.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_offers.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_offers.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_responsive.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_responsive.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_section_title.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_section_title.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_service.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_service.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_slick-nav.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_slick-nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_slider.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_slider.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_tesmonial.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_tesmonial.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\_varriable.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\_varriable.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\wwwroot\\template\\scss\\theme-default.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\theme-default.scss"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MinPro.Microsoft.AspNetCore.StaticWebAssets.props",

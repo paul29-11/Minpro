@@ -1,49 +1,93 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿
+<!doctype html>
+<html class="no-js" lang="zxx">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MinPro</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/MinPro.styles.css" asp-append-version="true" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Docmed</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="~/template/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/template/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/template/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/template/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/template/css/themify-icons.css">
+    <link rel="stylesheet" href="~/template/css/nice-select.css">
+    <link rel="stylesheet" href="~/template/css/flaticon.css">
+    <link rel="stylesheet" href="~/template/css/gijgo.css">
+    <link rel="stylesheet" href="~/template/css/animate.css">
+    <link rel="stylesheet" href="~/template/css/slicknav.css">
+    <link rel="stylesheet" href="~/template/css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MinPro</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <!-- Header -->
+    <partial name="_Header" />
+    <!-- /Header -->
+   
+
+    <div>
+
+        @RenderBody()
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - MinPro - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    <!-- Footer -->
+    <partial name="_Footer" />
+    <!-- /Footer -->
+
+
+    <!-- JS here -->
+    <script src="~/template/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="~/template/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="~/template/js/popper.min.js"></script>
+    <script src="~/template/js/bootstrap.min.js"></script>
+    <script src="~/template/js/owl.carousel.min.js"></script>
+    <script src="~/template/js/isotope.pkgd.min.js"></script>
+    <script src="~/template/js/ajax-form.js"></script>
+    <script src="~/template/js/waypoints.min.js"></script>
+    <script src="~/template/js/jquery.counterup.min.js"></script>
+    <script src="~/template/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/template/js/scrollIt.js"></script>
+    <script src="~/template/js/jquery.scrollUp.min.js"></script>
+    <script src="~/template/js/wow.min.js"></script>
+    <script src="~/template/js/nice-select.min.js"></script>
+    <script src="~/template/js/jquery.slicknav.min.js"></script>
+    <script src="~/template/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/template/js/plugins.js"></script>
+    <script src="~/template/js/gijgo.min.js"></script>
+    <!--contact js-->
+    <script src="~/template/js/contact.js"></script>
+    <script src="~/template/js/jquery.ajaxchimp.min.js"></script>
+    <script src="~/template/js/jquery.form.js"></script>
+    <script src="~/template/js/jquery.validate.min.js"></script>
+    <script src="~/template/js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
+
+        });
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2();
+        });
+    </script>
 </body>
+
 </html>

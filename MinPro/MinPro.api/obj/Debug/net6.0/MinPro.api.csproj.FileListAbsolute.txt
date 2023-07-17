@@ -247,3 +247,7 @@ C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.api\obj\Debug\net6.0\refin
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.api\obj\Debug\net6.0\MinPro.api.pdb
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.api\obj\Debug\net6.0\MinPro.api.genruntimeconfig.cache
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.api\obj\Debug\net6.0\ref\MinPro.api.dll
+C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.api\bin\Debug\net6.0\MinPro.datamodels.dll
+C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.api\bin\Debug\net6.0\MinPro.viewmodels.dll
+C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.api\bin\Debug\net6.0\MinPro.datamodels.pdb
+C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.api\bin\Debug\net6.0\MinPro.viewmodels.pdb
