@@ -1,9 +1,10 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\MinPro.csproj": {}
+    "D:\\Minpro\\MinPro\\MinPro\\MinPro.csproj": {}
   },
   "projects": {
+<<<<<<< HEAD
     "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro.datamodels\\MinPro.datamodels.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -133,16 +134,19 @@
       }
     },
     "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\MinPro.csproj": {
+=======
+    "D:\\Minpro\\MinPro\\MinPro\\MinPro.csproj": {
+>>>>>>> bab11a69d64bbc3979d0638686b22b09b2bfeed3
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\MinPro.csproj",
+        "projectUniqueName": "D:\\Minpro\\MinPro\\MinPro\\MinPro.csproj",
         "projectName": "MinPro",
-        "projectPath": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\MinPro.csproj",
-        "packagesPath": "C:\\Users\\XSIS User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\obj\\",
+        "projectPath": "D:\\Minpro\\MinPro\\MinPro\\MinPro.csproj",
+        "packagesPath": "C:\\Users\\yogac\\.nuget\\packages\\",
+        "outputPath": "D:\\Minpro\\MinPro\\MinPro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\XSIS User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yogac\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
