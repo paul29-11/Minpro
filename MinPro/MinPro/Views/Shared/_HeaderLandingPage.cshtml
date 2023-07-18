@@ -1,0 +1,85 @@
+﻿<!-- header-start -->
+<header>
+    <div class="header-area ">
+        <div class="header-top_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 ">
+                        
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="short_contact_list">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-envelope"></i> RumahSakit@RumahSakit.com</a></li>
+                                <li><a href="#"> <i class="fa fa-phone"></i> 09090</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sticky-header" class="main-header-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-2">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="https://xsis.academy/wp-content/uploads/2019/11/logo-small.png" style="height:60px; width:80px;" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="main-menu  d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a asp-controller="LandingPage" asp-action="Index"> Home </a></li>
+                                    <li><a asp-controller="LandingPage" asp-action="Tentang"> Tentang </a></li>
+                                    <li><a asp-controller="LandingPage" asp-action="Doktor"> Doktor </a></li>
+                                    <li>
+                                        <button type="button" class="btn btn-primary" id="btn_login">Login</button>
+                                    </li>
+                                    @*<li>
+                                        <button type="button" class="btn btn-primary" id="btn_daftar">Daftar</button>
+                                    </li>*@
+                                    <li>
+                                        <a asp-controller="Home" asp-action="Index"> Login </a>
+                                        @*<button type="button" class="btn btn-primary" id="btn_logincoba">Login Coba</button>*@
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                        <!-- Search form -->
+                        <input class="form-control" type="text" placeholder="Cari Dokter atau Faskes" aria-label="Search">
+                        
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header-end -->
+
+<script>
+    $("#btn_login").click(function () {
+        
+        $("#modal_body_sm").empty()
+        $("#modal_body_sm").load("/LandingPage/Login")
+        $("#modal_sm").modal("show")
+        $(".modal-backdrop").removeClass()
+    })
+
+    $("#btn_logincoba").click(function () {
+
+        $("#modal_body_sm").empty()
+        $("#modal_body_sm").load("/LandingPage/LoginCoba")
+        $("#modal_sm").modal("show")
+        $(".modal-backdrop").removeClass()
+    })
+</script>
+

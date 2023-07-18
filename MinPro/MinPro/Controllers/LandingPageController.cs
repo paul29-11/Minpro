@@ -9,7 +9,7 @@ namespace MinPro.Controllers
         private readonly FacilityService facilityService;
         private readonly DoctorService doctorService;
         private readonly IWebHostEnvironment webHostEnvironment;
-        private int IdUser = 1;
+        public string Username = "";
 
         public LandingPageController(FacilityService _facilityService, DoctorService _doctorService)
         {
@@ -24,8 +24,37 @@ namespace MinPro.Controllers
             List<VMDoctor> listDoctor = await doctorService.GetAllData();
             ViewBag.listDoctor = listDoctor;
 
+            return View("Index", "_LayoutLandingPage");
+        }
+
+        public IActionResult Tentang()
+        {
             return View();
         }
+
+        public async Task<IActionResult> Doktor()
+        {
+            List<VMDoctor> listDoctor = await doctorService.GetAllData();
+            ViewBag.listDoctor = listDoctor;
+
+            return View();
+        }
+
+        public IActionResult Login()
+        {
+            return PartialView();
+        }
+        public IActionResult Daftar()
+        {
+            return PartialView();
+        }
+
+        public IActionResult LoginCoba()
+        {
+            return PartialView();
+        }
+
+        
 
     }
 }

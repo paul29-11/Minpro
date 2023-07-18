@@ -10420,19 +10420,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yogac\\.nuget\\packages\\": {}
+    "C:\\Users\\XSIS User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Minpro\\MinPro\\MinPro\\MinPro.csproj",
+      "projectUniqueName": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\MinPro.csproj",
       "projectName": "MinPro",
-      "projectPath": "D:\\Minpro\\MinPro\\MinPro\\MinPro.csproj",
-      "packagesPath": "C:\\Users\\yogac\\.nuget\\packages\\",
-      "outputPath": "D:\\Minpro\\MinPro\\MinPro\\obj\\",
+      "projectPath": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\MinPro.csproj",
+      "packagesPath": "C:\\Users\\XSIS User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\yogac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\XSIS User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

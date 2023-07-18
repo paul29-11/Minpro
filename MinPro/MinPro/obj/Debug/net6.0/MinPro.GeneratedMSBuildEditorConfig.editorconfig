@@ -24,8 +24,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/LandingPage/Doktor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcRG9rdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/LandingPage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/LandingPage/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/LandingPage/LoginCoba.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcTG9naW5Db2JhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/LandingPage/Tentang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcVGVudGFuZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/Shared/Error.cshtml]
@@ -36,8 +52,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/Shared/_FooterLandingPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJMYW5kaW5nUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/Shared/_HeaderLandingPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXJMYW5kaW5nUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/Shared/_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -55,6 +83,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bi3re30cau
+
+[C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/Shared/_LayoutLandingPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMYW5kaW5nUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-8om7acu57o
 
 [C:/Users/XSIS User/Documents/319/MinPro/MinPro/MinPro/Views/Shared/_Layout_Copy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfQ29weS5jc2h0bWw=

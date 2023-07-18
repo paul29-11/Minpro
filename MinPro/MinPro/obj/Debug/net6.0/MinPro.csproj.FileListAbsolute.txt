@@ -244,10 +244,11 @@ C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\obj\Debug\net6.0\refint\Mi
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\obj\Debug\net6.0\MinPro.pdb
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\obj\Debug\net6.0\MinPro.genruntimeconfig.cache
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\obj\Debug\net6.0\ref\MinPro.dll
-C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout_Copy.cshtml.rz.scp.css
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\bin\Debug\net6.0\MinPro.datamodels.dll
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\bin\Debug\net6.0\MinPro.viewmodels.dll
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\bin\Debug\net6.0\MinPro.datamodels.pdb
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\bin\Debug\net6.0\MinPro.viewmodels.pdb
+C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutLandingPage.cshtml.rz.scp.css
+C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

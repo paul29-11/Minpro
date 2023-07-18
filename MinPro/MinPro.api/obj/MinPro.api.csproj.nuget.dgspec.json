@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj": {}
+    "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro.api\\MinPro.api.csproj": {}
   },
   "projects": {
-    "D:\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj": {
+    "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro.api\\MinPro.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj",
+        "projectUniqueName": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro.api\\MinPro.api.csproj",
         "projectName": "MinPro.api",
-        "projectPath": "D:\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj",
-        "packagesPath": "C:\\Users\\yogac\\.nuget\\packages\\",
-        "outputPath": "D:\\Minpro\\MinPro\\MinPro.api\\obj\\",
+        "projectPath": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro.api\\MinPro.api.csproj",
+        "packagesPath": "C:\\Users\\XSIS User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yogac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\XSIS User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
