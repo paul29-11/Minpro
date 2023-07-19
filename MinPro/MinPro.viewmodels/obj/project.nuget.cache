@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "G+sY/W3Lc0J+Cxjo4b0cFrmuH9xOw+d/17VjGyxTZkPksY37cdPv64DYjIh5x8+ujyZ7JvzRIrwGwNLDF1+zmw==",
+  "dgSpecHash": "SIH1VOIc+nadlK1EsnEocS8qrpf94qyQRFm8EHQPOOmvWFuiwBuyTcMT8uzmc9S+EQzSt7XzbHviTN7djdrpOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\XSIS User\\Documents\\319\\MinPro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj",
+  "projectFilePath": "C:\\Users\\rizwa\\Documents\\MinPro\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\XSIS User\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
-    "C:\\Users\\XSIS User\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
-    "C:\\Users\\XSIS User\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+    "C:\\Users\\rizwa\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\rizwa\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\rizwa\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
   ],
   "logs": []
 }
