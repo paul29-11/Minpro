@@ -25,5 +25,35 @@ namespace MinPro.Service
 
             return data;
         }
+
+        public async Task<VMDoctor> GetById(int id)
+        {
+            VMDoctor data = new VMDoctor();
+            string apiResponse = await client.GetStringAsync(RouteAPI + $"apiDocter/GetById/{id}");
+            data = JsonConvert.DeserializeObject<VMDoctor>(apiResponse);
+
+            return data;
+        }
+        public async Task<List<VMDoctor>> GetPendidikan()
+        {
+            List<VMDoctor> data = new List<VMDoctor>();
+
+            string apiResponse = await client.GetStringAsync(RouteAPI + "apiDocter/GetPendidikan");
+            data = JsonConvert.DeserializeObject<List<VMDoctor>>(apiResponse);
+
+            return data;
+        }
+
+        public async Task<List<VMDoctor>> GetTindakanMedis()
+        {
+            List<VMDoctor> data = new List<VMDoctor>();
+
+            string apiResponse = await client.GetStringAsync(RouteAPI + "apiDocter/GetTindakanMedis");
+            data = JsonConvert.DeserializeObject<List<VMDoctor>>(apiResponse);
+
+            return data;
+        }
+
+
     }
 }

@@ -23,5 +23,11 @@ namespace MinPro.viewmodels
         public long? DeletedBy { get; set; }
         public DateTime? DeletedOn { get; set; }
         public bool IsDelete { get; set; }
+        public string InstitutionName { get; set; } = null!;
+        public string Major { get; set; } = null!;
+        public string StartYear { get; set; } = null!;
+        public string NameTindakan { get; set; } = null!;
+
+
     }
 }

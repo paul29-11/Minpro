@@ -26,3 +26,17 @@ C:\Users\rizwa\Documents\MinPro\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0
 C:\Users\rizwa\Documents\MinPro\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\MinPro.datamodels.csproj.CoreCompileInputs.cache
 C:\Users\rizwa\Documents\MinPro\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\MinPro.datamodels.genruntimeconfig.cache
 C:\Users\rizwa\Documents\MinPro\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\ref\MinPro.datamodels.dll
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\bin\Debug\net6.0\MinPro.datamodels.deps.json
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\bin\Debug\net6.0\MinPro.datamodels.runtimeconfig.json
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\bin\Debug\net6.0\MinPro.datamodels.dll
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\bin\Debug\net6.0\MinPro.datamodels.pdb
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\MinPro.datamodels.csproj.AssemblyReference.cache
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\MinPro.datamodels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\MinPro.datamodels.AssemblyInfoInputs.cache
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\MinPro.datamodels.AssemblyInfo.cs
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\MinPro.datamodels.csproj.CoreCompileInputs.cache
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\MinPro.datamodels.dll
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\refint\MinPro.datamodels.dll
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\MinPro.datamodels.pdb
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\MinPro.datamodels.genruntimeconfig.cache
+C:\Users\XSIS User\Documents\319\Baru\Minpro\MinPro\MinPro.datamodels\obj\Debug\net6.0\ref\MinPro.datamodels.dll

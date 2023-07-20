@@ -25,6 +25,8 @@ namespace MinPro.api.Controllers
                 join b in db.MBiodata on d.BiodataId equals b.Id
                 join s in db.MSpecializations on c.SpecializationId equals s.Id
                 where c.IsDelete == false
+
+
                 //from c in db.TCurrentDoctorSpecializations
                 //join d in db.MDoctors on c.DoctorId equals d.Id
                 //join b in db.MBiodata on d.BiodataId equals b.Id
@@ -33,18 +35,101 @@ namespace MinPro.api.Controllers
                 //join l in db.TDoctorOffices on c.DoctorId equals l.DoctorId
                 //join sch in db.TDoctorOfficeSchedules on c.DoctorId equals sch.DoctorId
 
-                where c.IsDelete == false
-               
-                    select new VMDoctor
-                    { 
-                        Id = c.Id,
-                        NameDoctor = b.Fullname,
-                        NameSpecialis = s.Name,
-                        ImagePath = b.ImagePath,
 
-                        IsDelete = c.IsDelete
-                    }).ToList();
+
+                select new VMDoctor
+                {
+                    //Id = c.Id,
+                    Id = d.Id,
+                    NameDoctor = b.Fullname,
+                    NameSpecialis = s.Name,
+                    //NameSpecialis = s.Name,
+                    ImagePath = b.ImagePath,
+
+                    IsDelete = d.IsDelete
+                }).ToList();
             return data;
+        }
+
+        [HttpGet("GetById/{id}")]
+        public VMDoctor GetById(int id)
+        {
+            VMDoctor data = (from c in db.TCurrentDoctorSpecializations
+                             join d in db.MDoctors on c.DoctorId equals d.Id
+                             join b in db.MBiodata on d.BiodataId equals b.Id
+
+                             join s in db.MSpecializations on c.SpecializationId equals s.Id
+                             
+                             where c.IsDelete == false && d.Id == id
+                            select new VMDoctor
+                            {
+                                Id = d.Id,
+                                NameDoctor = b.Fullname,
+                                ImagePath = b.ImagePath,
+                                NameSpecialis = s.Name,
+
+
+                                IsDelete = d.IsDelete
+                            }).FirstOrDefault()!;
+            return data;
+        }
+
+        [HttpGet("GetPendidikan")]
+        public List<VMDoctor> GetPendidikan()
+        {
+            List<VMDoctor> data1 = (from p in db.MDoctorEducations
+                                    join d in db.MDoctors on p.DoctorId equals d.Id
+                                    where p.IsDelete == false && p.DoctorId == 3
+                                    select new VMDoctor
+                                    {
+                                        //Id = c.Id,
+                                        Id = d.Id,
+                                        InstitutionName = p.InstitutionName,
+                                        Major = p.Major,
+                                        StartYear = p.StartYear,
+
+                                        IsDelete = d.IsDelete
+                                    }).ToList();
+            return data1;
+                              
+        }
+
+        [HttpGet("GetRiwayatPraktek")]
+        public List<VMDoctor> GetRiwayatPraktek()
+        {
+            List<VMDoctor> data1 = (from p in db.MDoctorEducations
+                                    join d in db.MDoctors on p.DoctorId equals d.Id
+                                    where p.IsDelete == false && p.DoctorId == 3
+                                    select new VMDoctor
+                                    {
+                                        //Id = c.Id,
+                                        Id = d.Id,
+                                        InstitutionName = p.InstitutionName,
+                                        Major = p.Major,
+                                        StartYear = p.StartYear,
+
+                                        IsDelete = d.IsDelete
+                                    }).ToList();
+            return data1;
+
+        }
+
+        [HttpGet("GetTindakanMedis")]
+        public List<VMDoctor> GetTindakanMedis()
+        {
+            List<VMDoctor> data1 = (from t in db.TDoctorTreatments
+                                    join d in db.MDoctors on t.DoctorId equals d.Id
+                                    where t.IsDelete == false && t.DoctorId == 3
+                                    select new VMDoctor
+                                    {
+                                        //Id = c.Id,
+                                        Id = d.Id,
+                                        NameTindakan = t.Name,
+
+                                        IsDelete = d.IsDelete
+                                    }).ToList();
+            return data1;
+
         }
     }
 }

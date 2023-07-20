@@ -9,7 +9,7 @@ namespace MinPro.Controllers
         private readonly FacilityService facilityService;
         private readonly DoctorService doctorService;
         private readonly IWebHostEnvironment webHostEnvironment;
-        public string Username = "";
+       
 
         public LandingPageController(FacilityService _facilityService, DoctorService _doctorService)
         {
