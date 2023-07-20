@@ -13,11 +13,11 @@ namespace MinPro.datamodels
         [Column("id")]
         public long Id { get; set; }
         [Column("parent_biodata_id")]
-        public long? ParentBiodataId { get; set; }
+        public long ParentBiodataId { get; set; }
         [Column("customer_id")]
-        public long? CustomerId { get; set; }
+        public long CustomerId { get; set; }
         [Column("customer_relation_id")]
-        public long? CustomerRelationId { get; set; }
+        public long CustomerRelationId { get; set; }
         [Column("created_by")]
         public long CreatedBy { get; set; }
         [Column("created_on", TypeName = "datetime")]

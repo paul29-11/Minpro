@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj": {}
+    "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj": {}
   },
   "projects": {
-    "D:\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj": {
+    "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj",
+        "projectUniqueName": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj",
         "projectName": "MinPro.viewmodels",
-        "projectPath": "D:\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj",
-        "packagesPath": "C:\\Users\\yogac\\.nuget\\packages\\",
-        "outputPath": "D:\\Minpro\\MinPro\\MinPro.viewmodels\\obj\\",
+        "projectPath": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj",
+        "packagesPath": "C:\\Users\\drizk\\.nuget\\packages\\",
+        "outputPath": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.viewmodels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yogac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\drizk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

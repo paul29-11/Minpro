@@ -10,3 +10,15 @@ C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.viewmodels\obj\Debug\net6.
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\refint\MinPro.viewmodels.dll
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\MinPro.viewmodels.pdb
 C:\Users\XSIS User\Documents\319\MinPro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\ref\MinPro.viewmodels.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\bin\Debug\net6.0\MinPro.viewmodels.deps.json
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\bin\Debug\net6.0\MinPro.viewmodels.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\bin\Debug\net6.0\MinPro.viewmodels.pdb
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\MinPro.viewmodels.csproj.AssemblyReference.cache
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\MinPro.viewmodels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\MinPro.viewmodels.AssemblyInfoInputs.cache
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\MinPro.viewmodels.AssemblyInfo.cs
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\MinPro.viewmodels.csproj.CoreCompileInputs.cache
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\MinPro.viewmodels.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\refint\MinPro.viewmodels.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\MinPro.viewmodels.pdb
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro.viewmodels\obj\Debug\net6.0\ref\MinPro.viewmodels.dll

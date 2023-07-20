@@ -1,0 +1,172 @@
+﻿@using MinPro.viewmodels;
+
+<div class="clearfix"></div>
+
+<div class="content-wrapper">
+    <div class="container-fluid">
+
+        <div class="row mt-3">
+            <div class="col-lg-4">
+                <div class="card profile-card-1">
+                    <div class="card-img-block">
+                        <img class="img-fluid mx-auto d-block" src="https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg?w=400&h=300&c=crop" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+
+                        <h5 class="card-title">Mark Stern</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+
+                    <div class="card-body border-top border-light">
+                        <div class="media align-items-center">
+                            <div class="media-body text-left ml-3">
+                                <div class="progress-wrapper">
+                                    <a asp-area="" asp-controller="Profile" asp-action="Index"><p>Pasien </p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media align-items-center">
+                            <div class="media-body text-left ml-3">
+                                <div class="progress-wrapper">
+                                    <p>Pembelian Obat </p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media align-items-center">
+                            <div class="media-body text-left ml-3">
+                                <div class="progress-wrapper">
+                                    <p>Rencana Kedatangan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media align-items-center">
+                            <div class="media-body text-left ml-3">
+                                <div class="progress-wrapper">
+                                    <p>Riwayat Chat Dokter </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <form asp-action="Index" asp-route-pageSize="@ViewBag.CurrentPageSize">
+                                <div class="input-group w-100">
+                                    <input type="text" name="searchString" value="@ViewBag.CurrentFilter" class="form-control" placeholder="Search..">
+                                    <div class="input-group-prepend">
+                                        <button type="submit" class="input-group-text" title="Search">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                    <div class="input-group-prepend">
+                                        <a class="input-group-text" asp-action="Index" title="Reset">
+                                            <i class="fa fa-refresh"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                            <div>
+                                <button class="btn btn-primary btn-sm mr-2" id="createPatientBtn" data-toggle="modal" data-target="#createPatientModal">Create</button>
+                                <button class="btn btn-danger btn-sm" id="deleteCheckedBtn" data-toggle="modal" data-target="#deleteCheckedModal">Delete Checked</button>
+                            </div>
+                        </div>
+                        <div class="list-group">
+                            @if (Model != null)
+                            {
+                                @foreach (var patient in Model)
+                                {
+                                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <!-- Changed to a flex-column container -->
+                                            <div class="d-flex align-items-center">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkbox-@patient.Id">
+                                                    <label class="form-check-label" for="checkbox-@patient.Id"></label>
+                                                </div>
+                                                <div class="ml-3">
+                                                    <span class="patient-name">@patient.Fullname</span>
+                                                </div>
+                                            </div>
+                                            <div class="ml-3">
+                                                <!-- This will appear below the Fullname -->
+                                                <span class="patient-dob">@patient.Dob</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex">
+                                            <button class="btn btn-sm btn-danger delete-patient-btn mr-2" data-toggle="modal" data-target="#deletePatientModal-@patient.Id"><i class="fa fa-trash"></i></button>
+                                            <button class="btn btn-sm btn-primary edit-patient-btn" data-toggle="modal" data-target="#editPatientModal-@patient.Id"><i class="fa fa-edit"></i></button>
+                                        </div>
+                                    </div>
+                                }
+
+                                }
+                            }
+                            else
+                            {
+                                <p>No data available.</p>
+                            } 
+                    </div>
+                        <div class="card-footer">
+                            @{
+                                var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+                                var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+                            }
+                            <div class="row">
+                                <div class="col-2">
+                                    <form asp-action="Index" id="form_pagesize">
+                                        <select name="PageSize" id="PageSize" class="form-control">
+                                            <option value="3">3</option>
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="col-10">
+                                    Page @Model.PageIndex of @Model.TotalPages
+                                    <a asp-action="Index"
+                                       asp-route-sortOrder="@ViewBag.CurrentSort"
+                                       asp-route-pageNumber="@(Model.PageIndex + 1)"
+                                       asp-route-currentFilter="@ViewBag.CurrentFilter"
+                                       asp-route-pageSize="@ViewBag.CurrentPageSize"
+                                       class="btn btn-info float-right @nextDisabled">
+                                        Next
+                                    </a>
+                                    <a asp-action="Index"
+                                       asp-route-sortOrder="@ViewBag.CurrentSort"
+                                       asp-route-pageNumber="@(Model.PageIndex - 1)"
+                                       asp-route-currentFilter="@ViewBag.CurrentFilter"
+                                       asp-route-pageSize="@ViewBag.CurrentPageSize"
+                                       class="btn btn-info float-right @prevDisabled">
+                                        Previous
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+                                       <script>
+                                           
+    $("#PageSize").val(@ViewBag.CurrentPageSize)
+
+    $("#PageSize").change(function () {
+        $("#form_pagesize").submit();
+    })
+
+                                       </script>

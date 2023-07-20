@@ -1,10 +1,23 @@
+using Microsoft.EntityFrameworkCore;
+using MinPro.datamodels;
+using MinPro.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ProfileService>();
+builder.Services.AddScoped<PasienService>();
 
+builder.Services.AddDbContext<DB_SpesificationContext>(option =>
+{
+    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+
+
+});
 var app = builder.Build();
 
+//Add Connection String
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

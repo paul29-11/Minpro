@@ -1,0 +1,18 @@
+﻿@using MinPro.viewmodels
+@model VMTblProfile
+
+<form id="editForm">
+    <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" class="form-control" id="fullname" name="fullname" value="@Model.Fullname">
+    </div>
+    <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="text" class="form-control" id="dob" name="dob" value="@Model.Dob?.ToString("dd MMMM yyyy")">
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" class="form-control" id="phone" name="phone" value="@Model.MobilePhone">
+    </div>
+    <button type="button" class="btn btn-primary" id="saveBtn">Save</button>
+</form>

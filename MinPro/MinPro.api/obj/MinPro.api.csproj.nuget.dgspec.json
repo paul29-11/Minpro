@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj": {}
+    "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj": {}
   },
   "projects": {
-    "D:\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj": {
+    "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj",
+        "projectUniqueName": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj",
         "projectName": "MinPro.api",
-        "projectPath": "D:\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj",
-        "packagesPath": "C:\\Users\\yogac\\.nuget\\packages\\",
-        "outputPath": "D:\\Minpro\\MinPro\\MinPro.api\\obj\\",
+        "projectPath": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.api\\MinPro.api.csproj",
+        "packagesPath": "C:\\Users\\drizk\\.nuget\\packages\\",
+        "outputPath": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yogac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\drizk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,7 +28,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.datamodels\\MinPro.datamodels.csproj": {
+                "projectPath": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.datamodels\\MinPro.datamodels.csproj"
+              },
+              "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj": {
+                "projectPath": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -81,6 +88,134 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.datamodels\\MinPro.datamodels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.datamodels\\MinPro.datamodels.csproj",
+        "projectName": "MinPro.datamodels",
+        "projectPath": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.datamodels\\MinPro.datamodels.csproj",
+        "packagesPath": "C:\\Users\\drizk\\.nuget\\packages\\",
+        "outputPath": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.datamodels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\drizk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.19, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.19, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj",
+        "projectName": "MinPro.viewmodels",
+        "projectPath": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.viewmodels\\MinPro.viewmodels.csproj",
+        "packagesPath": "C:\\Users\\drizk\\.nuget\\packages\\",
+        "outputPath": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro.viewmodels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\drizk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
