@@ -54,6 +54,16 @@ namespace MinPro.Service
             return data;
         }
 
+        public async Task<List<VMDoctor>> GetRiwayatPraktek()
+        {
+            List<VMDoctor> data = new List<VMDoctor>();
+
+            string apiResponse = await client.GetStringAsync(RouteAPI + "apiDocter/GetRiwayatPraktek");
+            data = JsonConvert.DeserializeObject<List<VMDoctor>>(apiResponse);
+
+            return data;
+        }
+
 
     }
 }

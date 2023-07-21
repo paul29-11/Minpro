@@ -26,7 +26,13 @@ namespace MinPro.viewmodels
         public string InstitutionName { get; set; } = null!;
         public string Major { get; set; } = null!;
         public string StartYear { get; set; } = null!;
+        public DateTime? StartTahun { get; set; } = null!;
+        public string EndYear { get; set; } = null!;
+        public DateTime? EndTahun { get; set; } = null!;
         public string NameTindakan { get; set; } = null!;
+        public string NameLokasi { get; set; } = null!;
+
+
 
 
     }

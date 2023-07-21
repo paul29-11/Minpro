@@ -97,16 +97,22 @@ namespace MinPro.api.Controllers
         [HttpGet("GetRiwayatPraktek")]
         public List<VMDoctor> GetRiwayatPraktek()
         {
-            List<VMDoctor> data1 = (from p in db.MDoctorEducations
-                                    join d in db.MDoctors on p.DoctorId equals d.Id
-                                    where p.IsDelete == false && p.DoctorId == 3
+            List<VMDoctor> data1 = (from dot in db.TDoctorOfficeTreatments
+                                    join dt in db.TDoctorTreatments on dot.DoctorTreatmentId equals dt.Id
+                                    join dof in db.TDoctorOffices on dot.DoctorOfficeId equals dof.Id
+                                    join d in db.MDoctors on dt.DoctorId equals d.Id
+                                    join ds in db.MDoctors on dof.DoctorId equals ds.Id
+                                    join mf in db.MMedicalFacilities on dof.MedicalFacilityId equals mf.Id
+                                    join l in db.MLocations on mf.LocationId equals l.Id
+                                    where dot.IsDelete == false && dt.DoctorId == 3
                                     select new VMDoctor
                                     {
                                         //Id = c.Id,
                                         Id = d.Id,
-                                        InstitutionName = p.InstitutionName,
-                                        Major = p.Major,
-                                        StartYear = p.StartYear,
+                                        NameLokasi = l.Name,
+                                        NameSpecialis = dof.Specialization,
+                                        StartTahun = dof.StartDate,
+                                        EndTahun = dof.EndDate,
 
                                         IsDelete = d.IsDelete
                                     }).ToList();

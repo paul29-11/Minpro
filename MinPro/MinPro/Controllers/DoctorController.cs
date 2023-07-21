@@ -25,6 +25,8 @@ namespace MinPro.Controllers
             ViewBag.listTinMed = listTinMed;
             List<VMDoctor> listEdu = await doctorService.GetPendidikan();
             ViewBag.listEdu = listEdu;
+            List<VMDoctor> listR = await doctorService.GetRiwayatPraktek();
+            ViewBag.listR = listR;
             return View(data);
         }
     }
