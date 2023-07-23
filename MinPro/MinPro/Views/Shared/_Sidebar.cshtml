@@ -1,10 +1,12 @@
-﻿@*@inject AuthService authService*@
+﻿@using MinPro.Service;
+
+@inject AuthService authService
 @{
-    //int IdUser = Context.Session.GetInt32("IdUser") ?? 0;
+    int IdUser = Context.Session.GetInt32("IdUser") ?? 0;
     string Username = "Admin"; 
-    //string NameUser = Context.Session.GetString("NameUser") ?? "";
-    //int IdRole = Context.Session.GetInt32("IdRole") ?? 0;
-    //var menus = await authService.MenuAccess(IdRole);
+    string NameUser = Context.Session.GetString("NameUser") ?? "";
+    int IdRole = Context.Session.GetInt32("IdRole") ?? 0;
+    var menus = await authService.MenuAccess(IdRole);
 }
 
 
@@ -17,28 +19,28 @@
             </a>
         </div>
         <ul class="sidebar-menu do-nicescrol">
-        @*@foreach (var parent in menus)
-        {*@
+        @foreach (var parent in menus)
+        {
             <li class="sidebar-item">
                 <a class="sidebar-link has-arrow" href="javascript:void(0)"
                    aria-expanded="false">
                     <i data-feather="parent.MenuIcon" class="feather-icon"></i>
                     <span class="hide-menu">parent.MenuName</span>
                 </a>
-                <ul aria-expanded="false" class="collapse first-level base-level-line">
+                @*<ul aria-expanded="false" class="collapse first-level base-level-line">
 
-                    @*@foreach (var child in parent.ListChild)
-                    {*@
+                    @foreach (var child in parent.ListChild)
+                    {
                         <li class="sidebar-item">
                             <a asp-controller="child.MenuController" asp-action="child.MenuAction" class="sidebar-link">
                                 <span class="hide-menu">child.MenuName</span>
                             </a>
                         </li>
-                    @*}*@
+                    }
 
-                </ul>
+                </ul>*@
             </li>
-       @* }*@
+        }
 
     @*@{
         // Admin

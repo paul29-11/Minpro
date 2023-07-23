@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MinPro.viewmodels;
+using Newtonsoft.Json;
 
 namespace MinPro.Service
 {
@@ -15,14 +16,14 @@ namespace MinPro.Service
             this.RouteAPI = this.configuration["RouteAPI"];
         }
 
-        //public async Task<List<VMMenuAccess>> MenuAccess(int IdRole)
-        //{
-        //    List<VMMenuAccess> data = new List<VMMenuAccess>();
+        public async Task<List<VMMenuAccess>> MenuAccess(int IdRole)
+        {
+            List<VMMenuAccess> data = new List<VMMenuAccess>();
 
-        //    string apiResponse = await client.GetStringAsync(RouteAPI + $"apiAuth/MenuAccess/{IdRole}");
-        //    data = JsonConvert.DeserializeObject<List<VMMenuAccess>>(apiResponse)!;
+            string apiResponse = await client.GetStringAsync(RouteAPI + $"apiAuth/MenuAccess/{IdRole}");
+            data = JsonConvert.DeserializeObject<List<VMMenuAccess>>(apiResponse)!;
 
-        //    return data;
-        //}
+            return data;
+        }
     }
 }
