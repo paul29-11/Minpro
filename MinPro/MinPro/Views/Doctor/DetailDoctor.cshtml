@@ -2,6 +2,9 @@
 
 @model VMDoctor
 
+
+
+
     <div class="row mt-3">
         <div class="col-lg-4">
             <div class="card profile-card-2">
@@ -12,9 +15,12 @@
                     <img src="/img/doctor/@Model.ImagePath" alt="profile-image" class="profile">
                     <h5 class="card-title">@Model.NameDoctor</h5>
                     <p class="card-text">@Model.NameSpecialis</p>
+                    <p class="card-text">Pengalaman 4 Tahun</p>
                     <div class="icon-block">
+                        <button type="submit" class="btn btn-light px-5">Chat Dokter</button>
                         <a href="#"><i class="fa fa-message text-white"></i></a>
                     </div>
+                        <p>Rp. @ViewBag.data1.Price</p>
                 </div>
 
                 <div class="card-body border-top border-light">

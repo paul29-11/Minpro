@@ -34,6 +34,14 @@ namespace MinPro.Service
 
             return data;
         }
+        public async Task<VMDoctor> GetHarga(int id)
+        {
+            VMDoctor data = new VMDoctor();
+            string apiResponse = await client.GetStringAsync(RouteAPI + $"apiDocter/GetHarga/{id}");
+            data = JsonConvert.DeserializeObject<VMDoctor>(apiResponse);
+
+            return data;
+        }
         public async Task<List<VMDoctor>> GetPendidikan()
         {
             List<VMDoctor> data = new List<VMDoctor>();

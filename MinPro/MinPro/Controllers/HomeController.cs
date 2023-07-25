@@ -15,6 +15,7 @@ namespace MinPro.Controllers
 
         public IActionResult Index()
         {
+
             return View();
         }
 

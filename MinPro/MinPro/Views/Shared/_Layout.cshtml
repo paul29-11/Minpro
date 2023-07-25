@@ -26,6 +26,17 @@
     <link href="~/assets/css/sidebar-menu.css" rel="stylesheet" />
     <!-- Custom Style-->
     <link href="~/assets/css/app-style.css" rel="stylesheet" />
+    <!-- Your other CSS and JS imports -->
+
+    <link rel="stylesheet" href="~/assets/css/custom-modal.css">
+    
+    <script src="~/assets/js/jquery.min.js"></script>
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+
+    <!-- Toastr -->
+    <script src="~/assets/plugins/toastr/toastr.min.js"></script>
+    <link rel="stylesheet" href="~/assets/plugins/toastr/toastr.min.css">
 
 </head>
     <body class="bg-theme bg-theme1">
@@ -49,13 +60,46 @@
                 </div>
             </div>
 
+
+        
+            <!-- Modal -->
+            <div class="modal fade" id="modal_sm" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="modal_body_sm">
+                            ...
+                        </div>
+                        <div class="modal-footer" id="modal_footer_sm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Modal Large-->
+            <div class="modal fade" id="modal_lg">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body" id="modal_body_lg">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Footer -->
             <partial name="_Footer" />
             <!-- /Footer -->
+               
 
 
     <!-- Bootstrap core JavaScript-->
-    <script src="~/assets/js/jquery.min.js"></script>
+    
     <script src="~/assets/js/popper.min.js"></script>
     <script src="~/assets/js/bootstrap.min.js"></script>
 

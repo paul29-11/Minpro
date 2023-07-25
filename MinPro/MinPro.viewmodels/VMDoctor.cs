@@ -31,6 +31,7 @@ namespace MinPro.viewmodels
         public DateTime? EndTahun { get; set; } = null!;
         public string NameTindakan { get; set; } = null!;
         public string NameLokasi { get; set; } = null!;
+        public decimal? Price { get; set; } = null!;
 
 
 

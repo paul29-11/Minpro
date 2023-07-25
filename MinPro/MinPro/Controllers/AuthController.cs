@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using MinPro.Service;
+using MinPro.viewmodels;
+using System.Drawing;
 
 namespace MinPro.Controllers
 {
@@ -7,6 +10,7 @@ namespace MinPro.Controllers
     {
         private AuthService authService;
         //private RoleService roleService;
+        VMResponse respon = new VMResponse();
 
         public AuthController(AuthService _authService)
         {
@@ -16,5 +20,24 @@ namespace MinPro.Controllers
         {
             return PartialView();
         }
+
+        [HttpPost]
+        public async Task<JsonResult> LoginSubmit(string email)
+        {
+            VMUser user = await authService.CheckLogin(email);
+            if (user != null)
+            {
+                HttpContext.Session.SetString("email", user.Email);
+                HttpContext.Session.SetInt32("IdRole", user.IdRole == null ? 0 : Convert.ToInt32(user.IdRole));
+            }
+            else
+            {
+                respon.Success = false;
+                respon.Message = $"Oops, {email} not found pr password is wrong, please check it !";
+            }
+            return Json(new { dataRespon = respon });
+        }
+
+
     }
 }

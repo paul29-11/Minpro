@@ -21,6 +21,9 @@ namespace MinPro.Controllers
         public async Task<IActionResult> DetailDoctor(int id)
         {
             VMDoctor data = await doctorService.GetById(3);
+
+            VMDoctor data1 = await doctorService.GetHarga(2);
+            ViewBag.data1 = data1;
             List<VMDoctor> listTinMed = await doctorService.GetTindakanMedis();
             ViewBag.listTinMed = listTinMed;
             List<VMDoctor> listEdu = await doctorService.GetPendidikan();

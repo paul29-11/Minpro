@@ -24,6 +24,7 @@ namespace MinPro.api.Controllers
                 join d in db.MDoctors on c.DoctorId equals d.Id
                 join b in db.MBiodata on d.BiodataId equals b.Id
                 join s in db.MSpecializations on c.SpecializationId equals s.Id
+
                 where c.IsDelete == false
 
 
@@ -60,6 +61,8 @@ namespace MinPro.api.Controllers
 
                              join s in db.MSpecializations on c.SpecializationId equals s.Id
                              
+
+
                              where c.IsDelete == false && d.Id == id
                             select new VMDoctor
                             {
@@ -94,7 +97,27 @@ namespace MinPro.api.Controllers
                               
         }
 
-        [HttpGet("GetRiwayatPraktek")]
+        [HttpGet("GetHarga/{id}")]
+        public VMDoctor GetHarga(int id)
+        {
+            VMDoctor data1 = (from price in db.TDoctorOfficeTreatmentPrices
+                             join toffice in db.TDoctorOfficeTreatments on price.DoctorOfficeTreatmentId equals toffice.Id
+
+                             join office in db.TDoctorOffices on toffice.DoctorOfficeId equals office.Id
+                             join doctor in db.MDoctors on office.DoctorId equals doctor.Id
+
+                             where price.IsDelete == false && office.DoctorId == id
+                             select new VMDoctor
+                             {
+                                 Id = doctor.Id,
+                                 Price = price.Price,
+
+                                 IsDelete = price.IsDelete
+                             }).FirstOrDefault()!;
+            return data1;   
+        }
+
+            [HttpGet("GetRiwayatPraktek")]
         public List<VMDoctor> GetRiwayatPraktek()
         {
             List<VMDoctor> data1 = (from dot in db.TDoctorOfficeTreatments
@@ -137,5 +160,7 @@ namespace MinPro.api.Controllers
             return data1;
 
         }
+
+
     }
 }

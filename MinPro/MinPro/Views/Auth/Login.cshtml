@@ -6,11 +6,10 @@
 <div class="col-lg-12">
     <div class="p-3">
         <div class="text-center">
-            <img src="https://e1.pxfuel.com/desktop-wallpaper/296/408/desktop-wallpaper-blackpink-logo-blackpink-the-album.jpg" style="width:40px; height:80px;" alt="wrapkit">
         </div>
         <h2 class="mt-3 text-center">Sign In</h2>
-        <p class="text-center">Enter your email address and password to access admin panel.</p>
-        <form class="mt-4" id="form_login">
+        <p class="text-center">Masukan Email dan Password</p>
+        <form class="mt-4" id="form_login" method="post">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="form-group">
@@ -23,14 +22,14 @@
                     <div class="form-group">
                         <label class="text-dark" for="pwd">Password</label>
                         <input class="form-control" id="Password" name="Password" type="password"
-                               placeholder="enter your password">
+                               placeholder="enter your password" readonly>
                     </div>
                 </div>
                 <div class="col-lg-12 text-center">
                     <button type="submit" class="btn btn-block btn-dark">Sign In</button>
                 </div>
                 <div class="col-lg-12 text-center mt-5">
-                    Don't have an account? <a class="text-danger" id="btn_register">Sign Up</a>
+                    Belum Punya Akun? <a class="text-danger" id="btn_register">Daftar Sekarang</a>
                 </div>
             </div>
         </form>
@@ -45,9 +44,9 @@
 <script>
 
     $("#btn_register").click(function () {
-        $("#modal_body_lg").empty()
-        $("#modal_body_lg").load("/Auth/Register")
-        $("#modal_lg").modal("show")
+        $("#modal_body_sm").empty()
+        $("#modal_body_sm").load("/Auth/Register")
+        $("#modal_sm").modal("show")
     })
 
     $("#form_login").validate({
@@ -56,25 +55,23 @@
             Email: {
                 required: true,
                 email: true,
-            },
-            Password: "required",
+            }
         },
         messages: {
             Email: {
                 required: "Isi email",
                 email: "Isi dengan benar",
-            },
-            Password: "Isi password",
+            }
         },
         submitHandler: function (form) {
+
             var email = $("#Email").val()
-            var password = $("#Password").val()
 
             $.ajax({
-
-                url: "/Auth/LoginSubmit",
+                debugger
+                    url: "/Auth/LoginSubmit",
                 data: {
-                    email: email, password: password
+                    email: email
                 },
                 type: "post",
                 dataType: "json",
@@ -82,7 +79,7 @@
                     var data = respon.dataRespon
 
                     if (data.success) {
-                        $("#modal_lg").modal("hide")
+                        $("#modal_sm").modal("hide")
 
                         window.location.reload()
 

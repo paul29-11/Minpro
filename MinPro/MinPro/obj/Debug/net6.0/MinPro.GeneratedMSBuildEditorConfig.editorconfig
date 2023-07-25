@@ -9,93 +9,109 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MinPro
 build_property.RootNamespace = MinPro
-build_property.ProjectDir = C:\Users\rizwa\Documents\MinPro\Minpro\MinPro\MinPro\
+build_property.ProjectDir = C:\Users\XSIS User\Documents\319\MinPro1\Minpro\MinPro\MinPro\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\rizwa\Documents\MinPro\Minpro\MinPro\MinPro
+build_property.MSBuildProjectDirectory = C:\Users\XSIS User\Documents\319\MinPro1\Minpro\MinPro\MinPro
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Auth/Login.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Doctor/DetailDoctor.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Doctor/DetailDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXERldGFpbERvY3Rvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Home/Index.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Home/Privacy.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/LandingPage/Doktor.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/LandingPage/Doktor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcRG9rdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/LandingPage/Index.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/LandingPage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/LandingPage/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcTG9naW4uY3NodG1s
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/LandingPage/Login1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcTG9naW4xLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/LandingPage/LoginCoba.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/LandingPage/LoginCoba.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcTG9naW5Db2JhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/LandingPage/Tentang.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/LandingPage/Tentang.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcVGVudGFuZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Shared/Error.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Shared/_Footer.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Shared/_FooterLandingPage.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Shared/_FooterLandingPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJMYW5kaW5nUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Shared/_Header.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Shared/_HeaderLandingPage.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Shared/_HeaderLandingPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXJMYW5kaW5nUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Shared/_Sidebar.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Shared/_Sidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/_ViewImports.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Spesialisasi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Blc2lhbGlzYXNpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Spesialisasi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Blc2lhbGlzYXNpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Spesialisasi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Blc2lhbGlzYXNpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Spesialisasi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Blc2lhbGlzYXNpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/_ViewStart.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Shared/_Layout.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bi3re30cau
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Shared/_LayoutLandingPage.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Shared/_LayoutLandingPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMYW5kaW5nUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-8om7acu57o
 
-[C:/Users/rizwa/Documents/MinPro/Minpro/MinPro/MinPro/Views/Shared/_Layout_Copy.cshtml]
+[C:/Users/XSIS User/Documents/319/MinPro1/Minpro/MinPro/MinPro/Views/Shared/_Layout_Copy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfQ29weS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-5km9ape1vc
