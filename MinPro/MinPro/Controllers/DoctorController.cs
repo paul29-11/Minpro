@@ -22,14 +22,14 @@ namespace MinPro.Controllers
         {
             VMDoctor data = await doctorService.GetById(3);
 
-            VMDoctor data1 = await doctorService.GetHarga(2);
-            ViewBag.data1 = data1;
-            List<VMDoctor> listTinMed = await doctorService.GetTindakanMedis();
-            ViewBag.listTinMed = listTinMed;
-            List<VMDoctor> listEdu = await doctorService.GetPendidikan();
-            ViewBag.listEdu = listEdu;
-            List<VMDoctor> listR = await doctorService.GetRiwayatPraktek();
-            ViewBag.listR = listR;
+            //VMDoctor data1 = await doctorService.GetHarga(2);
+            //ViewBag.data1 = data1;
+            //List<VMDoctor> listTinMed = await doctorService.GetTindakanMedis();
+            //ViewBag.listTinMed = listTinMed;
+            //List<VMDoctor> listEdu = await doctorService.GetPendidikan();
+            //ViewBag.listEdu = listEdu;
+            //List<VMDoctor> listR = await doctorService.GetRiwayatPraktek();
+            //ViewBag.listR = listR;
             return View(data);
         }
     }

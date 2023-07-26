@@ -2,9 +2,6 @@
 
 @model VMDoctor
 
-
-
-
     <div class="row mt-3">
         <div class="col-lg-4">
             <div class="card profile-card-2">
@@ -13,14 +10,14 @@
                 </div>
                 <div class="card-body pt-5">
                     <img src="/img/doctor/@Model.ImagePath" alt="profile-image" class="profile">
-                    <h5 class="card-title">@Model.NameDoctor</h5>
-                    <p class="card-text">@Model.NameSpecialis</p>
+                    <h5 class="card-title">@Model.Fullname</h5>
+                    <p class="card-text">@Model.SpecializationName</p>
                     <p class="card-text">Pengalaman 4 Tahun</p>
                     <div class="icon-block">
                         <button type="submit" class="btn btn-light px-5">Chat Dokter</button>
                         <a href="#"><i class="fa fa-message text-white"></i></a>
                     </div>
-                        <p>Rp. @ViewBag.data1.Price</p>
+                        <p>Rp. Price</p>
                 </div>
 
                 <div class="card-body border-top border-light">
@@ -28,12 +25,12 @@
                         <div class="card-body">
                             <h5 class="card-title">Tindakan Medis</h5>
                             <div class="table-responsive">
-                                @foreach (var TinMe in ViewBag.listTinMed)
+                                @foreach (var TinMe in Model.Treatment)
                                 {
                                     <table class="table">          
                                         <tbody>
                                             <tr>
-                                            <td>@TinMe.NameTindakan</td>
+                                            <td>@TinMe.Name</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -48,19 +45,19 @@
                         <div class="card-body">
                             <h5 class="card-title">Riwayat Praktek</h5>
                             <div class="table-responsive">
-                                @foreach (var R in ViewBag.listR)
+                                @foreach (var R in Model.LocationHistory)
                                 {
                                 @*<table class="table">     *@
                                 <table>     
                                     <tbody>
                                         <tr>
                                             <td>
-                                                @R.NameLokasi
+                                                @R.Location
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
-                                                            <th scope="row">@R.NameSpecialis</th>
-                                                            <td style="text-align:right;">@R.StartTahun?.ToString("yyyy") - @R.EndTahun?.ToString("yyyy")</td>
+                                                            <th scope="row">@R.Specialization</th>
+                                                            <td style="text-align:right;">@R.StartDate?.ToString("yyyy") - @(R.EndDate.Value.Year == DateTime.Now.Year ? "Sekarang" : R.EndDate?.ToString("yyyy"))</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>                  
@@ -79,7 +76,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Pendidikan</h5>
                             <div class="table-responsive">
-                                @foreach (var edu in ViewBag.listEdu)
+                                @foreach (var edu in Model.DoctorEducation)
                                 {
                                     <table class="table">
                                         <tbody>
@@ -113,28 +110,22 @@
                         <li class="nav-item">
                         <a href="javascript:void();" data-target="#profile" data-toggle="pill" class="nav-link active"><i class="fa fa-map-marker"></i> <span class="hidden-xs">Lokasi Praktek</span></a>
                         </li>
-                        @*<li class="nav-item">
-                            <a href="javascript:void();" data-target="#messages" data-toggle="pill" class="nav-link"><i class="icon-envelope-open"></i> <span class="hidden-xs">Messages</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void();" data-target="#edit" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Edit</span></a>
-                        </li>*@
                     </ul>
                     <div class="tab-content p-3">
                         <div class="tab-pane active" id="profile">
                             <h5 class="mb-3">Lokasi Praktek</h5>
-                            @foreach (var RR in ViewBag.listR)
+                            @foreach (var location in Model.Location)
                             {
                                 
                                 <div class="row">
                                     <div class="card-body">
-                                        <h5 class="card-title">@RR.NameLokasi</h5>
+                                        <h5 class="card-title">@location.Location</h5>
                                         <div class="table-responsive">
                                             <table class="table">
                                                 
                                                 <tbody>
                                                     <tr>
-                                                        <td>@RR.NameSpecialis</td>
+                                                        <td>@location.Specialization</td>
                                                     </tr>
                                           
                                                 </tbody>

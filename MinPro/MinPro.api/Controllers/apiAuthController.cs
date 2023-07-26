@@ -72,6 +72,7 @@ namespace MinPro.api.Controllers
                  MenuName = Men.Name,
                  MenuAction = Men.Url,
                  MenuController = Men.Name,
+                 MenuIcon = Men.SmallIcon,
                  IdRole = IdRole,
              }).ToList();
 

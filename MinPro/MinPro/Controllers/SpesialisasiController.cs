@@ -92,7 +92,7 @@ namespace MinPro.Controllers
             return PartialView(data);
         }
 
-        [HttpPost]
+        [HttpPost] 
         public async Task<IActionResult> Edit(MSpecialization dataParam)
         {
             dataParam.ModifiedBy = IdUser;

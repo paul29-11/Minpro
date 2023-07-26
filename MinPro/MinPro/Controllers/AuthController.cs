@@ -27,7 +27,7 @@ namespace MinPro.Controllers
             VMUser user = await authService.CheckLogin(email);
             if (user != null)
             {
-                HttpContext.Session.SetString("email", user.Email);
+                HttpContext.Session.SetString("Email", user.Email);
                 HttpContext.Session.SetInt32("IdRole", user.IdRole == null ? 0 : Convert.ToInt32(user.IdRole));
             }
             else

@@ -17,7 +17,7 @@ namespace MinPro.datamodels
         [Column("medical_facility_id")]
         public long? MedicalFacilityId { get; set; }
         [Column("specialization")]
-        [StringLength(100)]
+        [StringLength(100)] 
         [Unicode(false)]
         public string Specialization { get; set; } = null!;
         [Column("start_date", TypeName = "date")]

@@ -3,9 +3,9 @@
 @inject AuthService authService
 @{
     //int IdUser = Context.Session.GetInt32("IdUser") ?? 0;
-    string Username = "Admin";
+    
     //string NameUser = Context.Session.GetString("NameUser") ?? "";
-    int IdRole = 2;
+    int IdRole = 3;
     //var menus = await authService.MenuAccess(IdRole);
     var menus = await authService.Menu(IdRole);
 }
@@ -24,7 +24,7 @@
             {    
                 <li>
                     <a asp-controller="@child.MenuController" asp-action="@child.MenuAction">
-                        <i class="fa fa-credit-card "></i> <span>@child.MenuName</span>
+                        <i class="@child.MenuIcon"></i> <span>@child.MenuName</span>
                     </a>
                 </li>
             }
