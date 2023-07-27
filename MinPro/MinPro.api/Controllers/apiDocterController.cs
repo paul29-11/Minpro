@@ -90,11 +90,12 @@ namespace MinPro.api.Controllers
                                           
                                           Treatment = (from DoctorTreatment in db.TDoctorTreatments
                                                        join Doctor in db.MDoctors on DoctorTreatment.DoctorId equals Doctor.Id
+
                                                        where DoctorTreatment.IsDelete == false && Doctor.IsDelete == false
                                                        && DoctorTreatment.DoctorId == id
                                                        select new VMDoctorTreatment
                                                        {
-
+                                                           Id = DoctorTreatment.Id,
                                                            DoctorId = Doctor.Id,
                                                            Name = DoctorTreatment.Name,
 

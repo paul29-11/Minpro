@@ -8,6 +8,7 @@ namespace MinPro.viewmodels
 {
     public class VMDoctorTreatment
     {
+        public long? Id { get; set; }
         public long? DoctorId { get; set; }
         public string? Name { get; set; }
         public long CreatedBy { get; set; }

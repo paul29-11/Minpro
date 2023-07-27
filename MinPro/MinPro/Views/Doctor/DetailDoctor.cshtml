@@ -10,14 +10,12 @@
                 </div>
                 <div class="card-body pt-5">
                     <img src="/img/doctor/@Model.ImagePath" alt="profile-image" class="profile">
-                    <h5 class="card-title">@Model.Fullname</h5>
-                    <p class="card-text">@Model.SpecializationName</p>
-                    <p class="card-text">Pengalaman 4 Tahun</p>
+                    
                     <div class="icon-block">
-                        <button type="submit" class="btn btn-light px-5">Chat Dokter</button>
-                        <a href="#"><i class="fa fa-message text-white"></i></a>
+                        
+                        <a href="#"></i></a>
                     </div>
-                        <p>Rp. Price</p>
+                    
                 </div>
 
                 <div class="card-body border-top border-light">
@@ -57,7 +55,7 @@
                                                     <tbody>
                                                         <tr>
                                                             <th scope="row">@R.Specialization</th>
-                                                            <td style="text-align:right;">@R.StartDate?.ToString("yyyy") - @(R.EndDate.Value.Year == DateTime.Now.Year ? "Sekarang" : R.EndDate?.ToString("yyyy"))</td>
+                                                            <td style="text-align:right;">@R.StartDate?.ToString("yyyy") - @(R.EndDate.Value.Year == DateTime.Now.Year ? "Sekarang" : @R.EndDate?.ToString("yyyy"))</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>                  
@@ -104,6 +102,19 @@
         </div>
 
         <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col"></div>
+                    <h5 class="card-title">@Model.Fullname</h5>
+                    <p class="card-text">@Model.SpecializationName</p>
+                    <p class="card-text">Pengalaman 4 Tahun</p>
+                    <div class="icon-block">
+                        <button type="submit" class="btn btn-light px-5">Chat Dokter</button>
+                        <a href="#"><i class="fa fa-message text-white"></i></a>
+                    </div>
+                    <p>Rp. Price</p>
+                </div>
+            </div>
             <div class="card">
                 <div class="card-body">
                     <ul class="nav nav-tabs nav-tabs-primary top-icon nav-justified">

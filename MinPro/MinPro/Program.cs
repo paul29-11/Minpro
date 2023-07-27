@@ -11,6 +11,7 @@ builder.Services.AddScoped<FacilityService>();
 builder.Services.AddScoped<DoctorService>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<SpesialisasiService>();
+builder.Services.AddScoped<TindakanService>();
 
 //Add Session
 builder.Services.AddDistributedMemoryCache();
