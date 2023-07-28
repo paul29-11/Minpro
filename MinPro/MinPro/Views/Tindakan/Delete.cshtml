@@ -14,7 +14,7 @@
                 <hr>
                 <form asp-action="SureDelete" method="post" id="form_delete">
                     <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
-                    <p style="text-align:center; color:azure;">Anda akan menghapus @Model.Name ?</p>
+                    <p style="text-align:center; color:azure;">Anda setuju untuk menghapus tindakan @Model.Name ?</p>
                     <div class="form-group" style="text-align:center;">
                         <a class="btn waves-effect btn btn-outline-danger" asp-controller="Tindakan" asp-action="Index">Tidak</a>
                         <button type="submit" class="btn btn-light px-5"><i class="fa fa-floppy-o"></i> Iya</button>

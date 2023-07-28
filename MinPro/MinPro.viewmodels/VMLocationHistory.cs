@@ -13,6 +13,7 @@ namespace MinPro.viewmodels
         public string? MedicalFacilityName { get; set; }
         public string Specialization { get; set; } = null!;
         public string? Location { get; set; }
+        public string? LocationLevel { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public long CreatedBy { get; set; }

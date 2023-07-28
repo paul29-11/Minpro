@@ -1,0 +1,109 @@
+﻿@using MinPro.viewmodels;
+
+@model VMDoctor
+
+<div class="col-lg-4">
+    <div class="card profile-card-2">
+        <div class="card-img-block">
+            <img class="img-fluid" src="~/img/bg/image.png" alt="Card image cap">
+        </div>
+        <div class="card-body p-4">
+            <a href="javascript:void();"><i class="zmdi zmdi-brush"></i> </a>
+            <img src="/img/doctor/@Model.ImagePath" alt="profile-image" class="profile">
+            <p class="card-title">
+                @Model.Fullname <br />
+                <small>@Model.SpecializationName</small>
+            </p>
+            <div class="icon-block">
+                <button type="submit" class="btn btn-light px-15">Janji</button>
+                <a href="#"><i class="fa fa-message text-white"></i></a>
+            </div>
+            <div class="icon-block">
+                <button type="submit" class="btn btn-light px-15">Chat Dokter</button>
+                <a href="#"><i class="fa fa-message text-white"></i></a>
+            </div>
+
+        </div>
+
+        <div class="card-body border-top border-light">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tindakan Medis</h5>
+                    <div class="table-responsive">
+                        @foreach (var TinMe in Model.Treatment)
+                        {
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>@TinMe.Name</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body border-top border-light">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Riwayat Praktek</h5>
+                    <div class="table-responsive">
+                        @foreach (var R in Model.LocationHistory)
+                        {
+                            @*<table class="table">     *@
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            @R.Location
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">@R.Specialization</th>
+                                                        <td style="text-align:right;">@R.StartDate?.ToString("yyyy") - (@R.EndDate.Value.Year == DateTime.Now.Year ? "Sekarang" : @R.EndDate?.ToString("yyyy"))</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body border-top border-light">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pendidikan</h5>
+                    <div class="table-responsive">
+                        @foreach (var edu in Model.DoctorEducation)
+                        {
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            @edu.InstitutionName
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" style="text-align:left;">@edu.Major</th>
+                                                        <td style="text-align:right;">@edu.StartYear</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
