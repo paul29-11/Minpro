@@ -1,8 +1,27 @@
-﻿@{
+﻿@*@using MinPro.Service;
+
+@inject AuthService authService
+
+@{
     //    int IdUser = Context.Session.GetInt32("IdUser") ?? 0;
     //    //string NameUser = Context.Session.GetString("NameUser") ?? "";
     //    //string ImgUser = Context.Session.GetString("ImgUser") ?? "";
+    int IdRole = 3;
+    int IdUser = 2;
+
+    var menus = await AuthService.Menu(IdRole);
+}*@
+
+@using MinPro.Service;
+
+@inject AuthService authService
+@{
+    //int IdUser = Context.Session.GetInt32("IdUser") ?? 0;
+
+    //string NameUser = Context.Session.GetString("NameUser") ?? "";
     int IdUser = 1;
+    //var menus = await authService.MenuAccess(IdRole);
+    var menus = await authService.DataById(IdUser);
 }
 
 <!--Start topbar header-->
@@ -33,6 +52,14 @@
                     <i class="fa fa-bell-o"></i>
                 </a>
             </li>
+            @{
+                if (IdUser != 0)
+                {
+                    <h3>Hello @menus.Name</h3>
+                }
+
+            }
+            
             <li class="nav-item language">
                 <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-flag"></i></a>
                 <ul class="dropdown-menu dropdown-menu-right">
@@ -53,13 +80,15 @@
                             <li class="dropdown-item user-details">
                                 <a href="javaScript:void();">
                                     <div class="media">
-                                        <div class="avatar"><img class="align-self-start mr-3" src="~/img/doctor/ImgUser" alt="user avatar"></div>
+                                        
                                         <div class="media-body">
                                             <h6 class="NameUser</h6>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
+                                        </div>
+                                
+                            
+                                </a>
+                        </li>
+                    }
                     <li class="dropdown-divider"></li>
                             <li class="dropdown-item"><i class="icon-envelope mr-2"></i> Inbox</li>
                             <li class="dropdown-divider"></li>

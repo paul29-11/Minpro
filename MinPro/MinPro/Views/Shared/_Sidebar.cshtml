@@ -23,7 +23,7 @@
             @foreach (var child in menus)
             {    
                 <li>
-                    <a asp-controller="@child.MenuController" asp-action="@child.MenuAction">
+                <a asp-controller="@child.MenuAction" asp-action="DetailDoctor">
                         <i class="@child.MenuIcon"></i> <span>@child.MenuName</span>
                     </a>
                 </li>

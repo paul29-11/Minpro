@@ -50,36 +50,60 @@
 
             var dataForm = $(form).serialize()
 
+            var name = $("#Name").val()
+            //var id = $("#DoctorId").val()
+            var id = 3
+
             $.ajax({
-                url: "/Tindakan/Create",
-                type: "post",
-                data: dataForm,
+
+                url: "/Tindakan/CheckByName",
+                type: "get",
+                //method : "get",//samaaja
+                data: { name: name, id: id },
                 dataType: "json",
                 success: function (respon) {
-                    var data = respon.dataRespon
-                    if (data.success) {
-                        $("#modal_sm").modal("hide")
-
-                        toastr.success(
-                            data.message,
-                            '',
-                            {
-                                timeOut: 500,
-                                fadeOut: 500,
-                                onHidden: function () {
-                                    window.location.reload()
-                                }
-                            }
-                        )
+                    if (respon) {
+                        $("#validate_Name").text("Nama Tindakan Sudah Ada")
+                        return true;
                     }
                     else {
-                        toastr.errorClass(data.message)
+                        fungsiSubmit(dataForm)
                     }
                 }
-
             })
         }
 
     })
+
+    function fungsiSubmit(dataParam) {
+        $.ajax({
+            url: "/Tindakan/Create",
+            type: "post",
+            data: dataParam,
+            dataType: "json",
+            success: function (respon) {
+                var data = respon.dataRespon
+                if (data.success) {
+                    $("#modal_sm").modal("hide")
+
+                    toastr.success(
+                        data.message,
+                        '',
+                        {
+                            timeOut: 500,
+                            fadeOut: 500,
+                            onHidden: function () {
+                                window.location.reload()
+                            }
+                        }
+                    )
+                }
+                else {
+                    toastr.errorClass(data.message)
+                }
+            }
+
+        })
+    }
 
 </script>

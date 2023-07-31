@@ -10,6 +10,7 @@ namespace MinPro.viewmodels
     {
         public long? Id { get; set; }
         public string? Email { get; set; }
+        public string? Name { get; set; }
         public long? IdRole { get; set; }
     }
 }

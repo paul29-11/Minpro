@@ -28,6 +28,14 @@ namespace MinPro.Service
             return data;
         }
 
+        public async Task<bool> CheckByName(string name, int id)
+        {
+            string apiResponse = await client.GetStringAsync(RouteAPI + $"apiTindakan/CheckByName/{name}/{id}");
+            bool isExis = JsonConvert.DeserializeObject<bool>(apiResponse);
+
+            return isExis;
+        }
+
         public async Task<TDoctorTreatment> GetDataById(int id)
         {
             TDoctorTreatment data = new TDoctorTreatment();

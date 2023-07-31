@@ -116,8 +116,8 @@ namespace MinPro.api.Controllers
             if (dt != null)
             {
                 dt.IsDelete = true;
-                dt.ModifiedBy = IdUser;
-                dt.ModifiedOn = DateTime.Now;
+                dt.DeletedBy = IdUser;
+                dt.DeletedOn = DateTime.Now;
 
                 try
                 {

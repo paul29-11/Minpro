@@ -49,6 +49,26 @@ namespace MinPro.api.Controllers
             return result;
         }
 
+        [HttpGet("CheckByName/{name}/{id}")]
+        public bool CheckByName(string name, int id)
+        {
+            TDoctorTreatment data = new TDoctorTreatment();
+            if (id == 0)
+            {
+                data = db.TDoctorTreatments.Where(a => a.Name == name && a.IsDelete == false && a.DoctorId == id).FirstOrDefault()!;
+            }
+            else
+            {
+                data = db.TDoctorTreatments.Where(a => a.Name == name && a.IsDelete == false && a.DoctorId == id).FirstOrDefault()!;
+
+            }
+            if (data != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
         [HttpPost("Save")]
         public VMResponse Save(TDoctorTreatment data)
         {
@@ -80,8 +100,8 @@ namespace MinPro.api.Controllers
             if (dt != null)
             {
                 dt.IsDelete = true;
-                dt.ModifiedBy = IdUser;
-                dt.ModifiedOn = DateTime.Now;
+                dt.DeletedBy = IdUser;
+                dt.DeletedOn = DateTime.Now;
 
                 try
                 {

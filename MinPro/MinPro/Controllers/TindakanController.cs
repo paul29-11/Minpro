@@ -26,6 +26,12 @@ namespace MinPro.Controllers
             return View(data);
         }
 
+        public async Task<JsonResult> CheckByName(string name, int id)
+        {
+            bool isExis = await tindakanService.CheckByName(name, id);
+            return Json(isExis);
+        }
+
         public async Task<IActionResult> Create()
         {
             TDoctorTreatment data = new TDoctorTreatment();

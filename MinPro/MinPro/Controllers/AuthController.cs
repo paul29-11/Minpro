@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MinPro.datamodels;
 using MinPro.Service;
 using MinPro.viewmodels;
+using Newtonsoft.Json;
 using System.Drawing;
 
 namespace MinPro.Controllers
@@ -37,6 +39,8 @@ namespace MinPro.Controllers
             }
             return Json(new { dataRespon = respon });
         }
+        
+
 
 
     }

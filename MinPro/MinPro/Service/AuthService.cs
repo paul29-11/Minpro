@@ -1,4 +1,5 @@
-﻿using MinPro.viewmodels;
+﻿using MinPro.datamodels;
+using MinPro.viewmodels;
 using Newtonsoft.Json;
 
 namespace MinPro.Service
@@ -42,6 +43,16 @@ namespace MinPro.Service
 
             string apiResponse = await client.GetStringAsync(RouteAPI + $"apiAuth/Menu/{IdRole}");
             data = JsonConvert.DeserializeObject<List<VMMenuAccess>>(apiResponse);
+
+            return data;
+        }
+
+        public async Task<VMUser> DataById(int id)
+        {
+            VMUser data = new VMUser();
+
+            string apiResponse = await client.GetStringAsync(RouteAPI + $"apiUser/DataById/{id}");
+            data = JsonConvert.DeserializeObject<VMUser>(apiResponse);
 
             return data;
         }
