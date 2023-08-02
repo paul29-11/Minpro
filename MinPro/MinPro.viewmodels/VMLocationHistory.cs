@@ -16,6 +16,7 @@ namespace MinPro.viewmodels
         public string? LocationLevel { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
+        public long? Experience { get; set; }
         public long CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
         public long? ModifiedBy { get; set; }
@@ -23,5 +24,6 @@ namespace MinPro.viewmodels
         public long? DeletedBy { get; set; }
         public DateTime? DeletedOn { get; set; }
         public bool IsDelete { get; set; }
+        
     }
 }

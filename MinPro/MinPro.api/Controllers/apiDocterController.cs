@@ -76,6 +76,17 @@ namespace MinPro.api.Controllers
                                           Fullname = Biodata.Fullname,
                                           MobilePhone = Biodata.MobilePhone,
                                           ImagePath = Biodata.ImagePath,
+
+                                          Chat = (from MedicalItem in db.MMedicalItems
+                                                  join MedicalItemCategory in db.MMedicalItemCategories on MedicalItem.MedicalItemCategoryId equals MedicalItemCategory.Id
+                                                  join MedicalItemSegmentation in db.MMedicalItemSegmentations on MedicalItem.MedicalItemSegmentationId equals MedicalItemSegmentation.Id
+
+                                                  where MedicalItem.IsDelete == false
+                                                  select new VMMedicalItem
+                                                  {
+                                                      PriceMin = MedicalItem.PriceMin,
+                                                      PriceMax = MedicalItem.PriceMax
+                                                  }).FirstOrDefault(),
                                           
                                           Treatment = (from DoctorTreatment in db.TDoctorTreatments
                                                        join Doctor in db.MDoctors on DoctorTreatment.DoctorId equals Doctor.Id
@@ -93,26 +104,7 @@ namespace MinPro.api.Controllers
 
                                                        }).ToList(),
 
-                                          //Location = (from DoctorOffice in db.TDoctorOffices
-                                          //            join MedicalFacility in db.MMedicalFacilities on DoctorOffice.MedicalFacilityId equals MedicalFacility.Id
-                                          //            join MedicalFacilityCategory in db.MMedicalFacilityCategories on MedicalFacility.MedicalFacilityCategoryId equals MedicalFacilityCategory.Id
-                                          //            join Location in db.MLocations on MedicalFacility.LocationId equals Location.Id
-                                          //            where DoctorOffice.IsDelete == false && MedicalFacility.IsDelete == false && MedicalFacilityCategory.IsDelete == false && Location.IsDelete == false
-                                          //            && DoctorOffice.DoctorId == id
-                                          //            orderby DoctorOffice.Id descending
-                                          //            select new VMLocation
-                                          //            {
-                                          //                DoctorId = DoctorOffice.DoctorId,
-                                          //                MedicalFacilityId = MedicalFacility.Id,
-                                          //                MedicalFacilityName = MedicalFacility.Name,
-                                          //                Specialization = DoctorOffice.Specialization,
-                                          //                Location = Location.Name,
-                                          //                StartDate = DoctorOffice.StartDate,
-                                          //                EndDate = DoctorOffice.EndDate,
-
-                                          //                CreatedBy = DoctorOffice.CreatedBy,
-                                          //                CreatedOn = DoctorOffice.CreatedOn
-                                          //            }).ToList(),
+                                         
 
                                           Location = (from DoctorOfficeSchedule in db.TDoctorOfficeSchedules
                                                       join Doctor in db.MDoctors on DoctorOfficeSchedule.DoctorId equals Doctor.Id
@@ -121,55 +113,37 @@ namespace MinPro.api.Controllers
                                                       join MedicalFacilityCategory in db.MMedicalFacilityCategories on MedicalFacility.MedicalFacilityCategoryId equals MedicalFacilityCategory.Id
                                                       join Location in db.MLocations on MedicalFacility.LocationId equals Location.Id
                                                       join DoctorOffice in db.TDoctorOffices on MedicalFacility.Id equals DoctorOffice.MedicalFacilityId
-
-                                                      //Location = (from 
-                                                      //            MedicalFacility in db.MMedicalFacilities 
-
-                                                      //            join MedicalFacilityCategory in db.MMedicalFacilityCategories on MedicalFacility.MedicalFacilityCategoryId equals MedicalFacilityCategory.Id
-                                                      //            join Location in db.MLocations on MedicalFacility.LocationId equals Location.Id
-                                                      //            join DoctorOffice in db.TDoctorOffices on MedicalFacility.Id equals DoctorOffice.MedicalFacilityId
-                                                      //join Doctor in db.MDoctors on DoctorOffice.DoctorId equals Doctor.Id
+                                                      join DoctorOfficeTreatment in db.TDoctorOfficeTreatments on DoctorOffice.Id equals DoctorOfficeTreatment.DoctorOfficeId
+                                                      join DoctorOfficeTreatmentPrice in db.TDoctorOfficeTreatmentPrices on DoctorOfficeTreatment.Id equals DoctorOfficeTreatmentPrice.DoctorOfficeTreatmentId
 
                                                       where DoctorOfficeSchedule.IsDelete == false && MedicalFacility.IsDelete == false && MedicalFacilityCategory.IsDelete == false && Location.IsDelete == false
                                                       && DoctorOfficeSchedule.DoctorId == id
                                                       orderby DoctorOfficeSchedule.Id descending
 
-                                                      //where DoctorOffice.IsDelete == false && MedicalFacility.IsDelete == false && MedicalFacilityCategory.IsDelete == false && Location.IsDelete == false
-                                                      //&& DoctorOffice.DoctorId == id
-                                                      //orderby DoctorOffice.Id descending
                                                       select new VMLocation
                                                       {
                                                           DoctorId = DoctorOffice.DoctorId,
+                                                          Price = DoctorOfficeTreatmentPrice.Price,
                                                           MedicalFacilityId = MedicalFacility.Id,
                                                           MedicalFacilityName = MedicalFacility.Name,
                                                           Specialization = DoctorOffice.Specialization,
                                                           Location = Location.Name,
-                                                          Day = MedicalFacilitySchedule.Day,
-                                                          StarTime = MedicalFacilitySchedule.TimeScheduleStart,
-                                                          EndTime = MedicalFacilitySchedule.TimeScheduleEnd,
                                                           FullAddress = MedicalFacility.FullAddress,
 
 
-                                                          //Schedule = (from DoctorOfficeTreatments in db.TDoctorOfficeTreatments
-                                                          //            join DoctorTreatment in db.TDoctorTreatments on DoctorOfficeTreatments.DoctorTreatmentId equals DoctorTreatment.Id
-                                                          //            join DoctorOffice in db.TDoctorOffices on DoctorOfficeTreatments.DoctorOfficeId equals DoctorOffice.Id
-                                                          //            join Doctor in db.MDoctors on DoctorTreatment.DoctorId equals Doctor.Id
-                                                          //            join Doctors in db.MDoctors on DoctorOffice.DoctorId equals Doctors.Id
-                                                          //            join MedicalFaciliy in db.MMedicalFacilities on DoctorOffice.MedicalFacilityId equals MedicalFaciliy.Id
-                                                          //            join Location in db.MLocations on MedicalFaciliy.LocationId equals Location.Id
-                                                          //            join LocationLevel in db.MLocationLevels on Location.LocationLevelId equals LocationLevel.Id
-                                                          //            where DoctorOffice.IsDelete == false && DoctorTreatment.DoctorId == id
-                                                          //            orderby DoctorOffice.Id descending
-                                                          //            select new VMLocationHistory
-                                                          //            {
-                                                          //                DoctorId = DoctorOffice.DoctorId,
+                                                          Schedule = (from DoctorOffice in db.TDoctorOffices
+                                                                      join MedicalFacility in db.MMedicalFacilities on DoctorOffice.MedicalFacilityId equals MedicalFacility.Id
+                                                                      join MedicalFacilitySchedule in db.MMedicalFacilitySchedules on MedicalFacility.Id equals MedicalFacilitySchedule.MedicalFacilityId
 
-                                                          //                Specialization = DoctorOffice.Specialization,
-                                                          //                Location = Location.Name,
-                                                          //                LocationLevel = LocationLevel.Name,
-                                                          //                StartDate = DoctorOffice.StartDate,
-                                                          //                EndDate = DoctorOffice.EndDate
-                                                          //            }).ToList(),
+                                                                      where MedicalFacilitySchedule.IsDelete == false && MedicalFacility.IsDelete == false
+                                                                      && DoctorOffice.DoctorId == id
+                                                                      select new VMSchedule
+                                                                      {
+                                                                          DoctorId = DoctorOffice.DoctorId,
+                                                                          Day = MedicalFacilitySchedule.Day,
+                                                                          StarTime = MedicalFacilitySchedule.TimeScheduleStart,
+                                                                          EndTime = MedicalFacilitySchedule.TimeScheduleEnd
+                                                                      }).ToList(),
 
                                                       }).ToList(),
 
@@ -192,7 +166,10 @@ namespace MinPro.api.Controllers
                                                                  Location = Location.Name,
                                                                  LocationLevel = LocationLevel.Name,
                                                                  StartDate = DoctorOffice.StartDate,
-                                                                 EndDate = DoctorOffice.EndDate
+                                                                 EndDate = DoctorOffice.EndDate,
+                                                                 Experience = Convert.ToInt32(Convert.ToDateTime(DoctorOffice.EndDate).Year - DoctorOffice.StartDate.Year)
+                                                                 //Experience = Convert.ToInt32(Convert.ToDateTime(DoctorOffice.EndDate).Year - DoctorOffice.StartDate.Year)
+
                                                              }).ToList(),
 
                                           DoctorEducation = (from Doctor in db.MDoctors

@@ -23,11 +23,17 @@
             @foreach (var child in menus)
             {    
                 <li>
-                <a asp-controller="@child.MenuAction" asp-action="DetailDoctor">
+                <a asp-controller="@child.MenuAction" asp-action="Index">
                         <i class="@child.MenuIcon"></i> <span>@child.MenuName</span>
                     </a>
                 </li>
             }
+
+                 <li>
+                    <a asp-controller="Doctor" asp-action="DetailDoctor">
+                        <i class="fa fa-user-md"></i> <span>Detail Doctor</span>
+                    </a>
+                </li>
     @*@{
         // Admin
         if (Username == "Admin")

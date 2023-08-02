@@ -15,6 +15,7 @@ namespace MinPro.viewmodels
         public string? Location { get; set; }
         public string? StarTime { get; set; }
         public string? EndTime { get; set; }
+        public decimal? Price { get; set; }
         public string? Day { get; set; }
         public string? FullAddress { get; set; }
         public DateTime? StartDate { get; set; }
@@ -26,5 +27,6 @@ namespace MinPro.viewmodels
         public long? DeletedBy { get; set; }
         public DateTime? DeletedOn { get; set; }
         public bool IsDelete { get; set; }
+        public List<VMSchedule>? Schedule { get; set; }
     }
 }

@@ -128,7 +128,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">@Model.Fullname</h5>
                                 <p class="card-text">@Model.SpecializationName</p>
-                                <p class="card-text">Pengalaman 4 Tahun</p> 
+                                <p class="card-text">Pengalaman @Model.LocationHistory.Max(DoctorOffice => DoctorOffice.Experience) Tahun </p> 
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,8 @@
                                     <button type="submit" class="btn btn-light px-5">Chat Dokter</button>
                                     <a href="#"><i class="fa fa-message text-white"></i></a>
                                 </div>
-                                <p>Rp. Price</p>
+                                
+                                <p>Rp. @Model.Chat.PriceMin?.ToString("#,#0")</p>
                             </div>
                         </div>
                     </div>
@@ -173,7 +174,7 @@
                                                         </td>
                                                         <td style="text-align:right">
                                                             <p>Konsultasi Mulai Dari</p>
-                                                            <p>Rp. 300.000</p>
+                                                            <p>Rp. @location.Price?.ToString("#,#0")</p>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -184,14 +185,16 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>
-                                                        <table class="table">
-                                                            <tbody>
-                                                                <td> @location.Day </td>
-                                                                <td>  @location.StarTime -  @location.EndTime </td>
-
-                                                            </tbody>
-                                                        </table>                                                           
-                                                                                                               </td>
+                                                            <table class="table">
+                                                                @foreach (var schedule in location.Schedule)
+                                                                {
+                                                                    <tbody>
+                                                                        <td> @schedule.Day </td>
+                                                                        <td>  @schedule.StarTime -  @schedule.EndTime </td>
+                                                                    </tbody>
+                                                                } 
+                                                            </table>                                                           
+                                                        </td>
                                                         <td style="text-align:right">
                                                             <button type="submit" class="btn btn-light px-5">Buat Janji</button>
                                                         </td>
