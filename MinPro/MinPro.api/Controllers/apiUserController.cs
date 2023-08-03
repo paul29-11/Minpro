@@ -30,7 +30,8 @@ namespace MinPro.api.Controllers
                              {
                                  Id = User.Id,
                                  IdRole = Role.Id,
-                                 Name = Biodata.Fullname
+                                 Name = Biodata.Fullname,
+                                 ImagePath = Biodata.ImagePath
 
                              }).FirstOrDefault()!;
             return data;

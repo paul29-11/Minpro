@@ -121,7 +121,7 @@
                 </div>
             </div>
 
-            @*<div class="container">*@
+            
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="card">
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-            @*</div>*@
+            
             
             <div class="card">
                 <div class="card-body">
@@ -186,12 +186,16 @@
                                                     <tr>
                                                         <td>
                                                             <table class="table">
-                                                                @foreach (var schedule in location.Schedule)
+                                                                @foreach (var schedule in @Model.Schedule)
                                                                 {
-                                                                    <tbody>
-                                                                        <td> @schedule.Day </td>
-                                                                        <td>  @schedule.StarTime -  @schedule.EndTime </td>
-                                                                    </tbody>
+                                                                    if(location.MedicalFacilityId == schedule.MedicalFacilityScheduleId)
+                                                                    {
+                                                                         <tbody>
+                                                                            <td>@schedule.Day </td>
+                                                                            <td>@schedule.StarTime -  @schedule.EndTime </td>
+                                                                        </tbody>
+                                                                    }
+                                                                   
                                                                 } 
                                                             </table>                                                           
                                                         </td>

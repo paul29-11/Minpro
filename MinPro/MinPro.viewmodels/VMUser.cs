@@ -12,5 +12,6 @@ namespace MinPro.viewmodels
         public string? Email { get; set; }
         public string? Name { get; set; }
         public long? IdRole { get; set; }
+        public string ImagePath { get; set; } = null!;
     }
 }

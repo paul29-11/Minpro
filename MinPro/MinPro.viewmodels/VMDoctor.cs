@@ -35,6 +35,7 @@ namespace MinPro.viewmodels
         public List<VMLocationHistory>? LocationHistory { get; set; }
         public List<VMDoctorEducation>? DoctorEducation { get; set; }
         public VMMedicalItem? Chat { get; set; }
+        public List<VMSchedule>? Schedule { get; set; }
 
     }
 }

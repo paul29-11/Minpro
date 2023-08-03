@@ -62,7 +62,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">@R.Specialization</th>
-                                                        <td style="text-align:right;">@R.StartDate?.ToString("yyyy") - (@R.EndDate.Value.Year == DateTime.Now.Year ? "Sekarang" : @R.EndDate?.ToString("yyyy"))</td>
+                                                        <td style="text-align:right;">@R.StartDate?.ToString("yyyy") - @(R.EndDate.Value.Year == DateTime.Now.Year ? "Sekarang" : @R.EndDate?.ToString("yyyy"))</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

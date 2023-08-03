@@ -1,16 +1,4 @@
-﻿@*@using MinPro.Service;
-
-@inject AuthService authService
-
-@{
-    //    int IdUser = Context.Session.GetInt32("IdUser") ?? 0;
-    //    //string NameUser = Context.Session.GetString("NameUser") ?? "";
-    //    //string ImgUser = Context.Session.GetString("ImgUser") ?? "";
-    int IdRole = 3;
-    int IdUser = 2;
-
-    var menus = await AuthService.Menu(IdRole);
-}*@
+﻿
 
 @using MinPro.Service;
 
@@ -55,7 +43,7 @@
             
             <li class="nav-item">
                 <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
-                    <span class="user-profile"><img src="https://via.placeholder.com/110x110" class="img-circle" alt="user avatar"></span>
+                    <span class="user-profile"><img src="/img/doctor/@menus.ImagePath" class="img-circle" alt="user avatar"></span>
                 </a>
                 @{
                     if (IdUser != 0)
