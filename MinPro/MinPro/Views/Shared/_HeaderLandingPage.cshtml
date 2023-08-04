@@ -1,4 +1,17 @@
-﻿<!-- header-start -->
+﻿@using MinPro.Service;
+
+
+@inject AuthService authService
+@{
+    //int IdUser = Context.Session.GetInt32("IdUser") ?? 0;
+
+    //string NameUser = Context.Session.GetString("NameUser") ?? "";
+    int IdRole = 5;
+    //var menus = await authService.MenuAccess(IdRole);
+    var menus = await authService.Menu(IdRole);
+}
+
+<!-- header-start -->
 <header>
     <div class="header-area ">
         <div class="header-top_area">
@@ -32,9 +45,13 @@
                         <div class="main-menu  d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a asp-controller="LandingPage" asp-action="Index"> Home </a></li>
-                                    <li><a asp-controller="LandingPage" asp-action="Tentang"> Tentang </a></li>
-                                    <li><a asp-controller="LandingPage" asp-action="Doktor"> Doktor </a></li>
+                                    @foreach (var child in menus)
+                                    {
+                                        <li><a asp-controller="LandingPage" asp-action="@child.MenuAction"> @child.MenuName </a></li>
+                                    }
+
+                                    @*<li><a asp-controller="LandingPage" asp-action="Tentang"> Tentang </a></li>
+                                    <li><a asp-controller="LandingPage" asp-action="Doktor"> Doktor </a></li>*@
                                     <li>
                                         <button type="button" class="btn btn-primary" id="btn_login">Login</button>
                                     </li>

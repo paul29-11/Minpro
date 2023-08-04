@@ -60,12 +60,12 @@ namespace MinPro.api.Controllers
                                       {
                                           DoctorId = Doctor.Id,
                                           BiodataId = Biodata.Id,
-                                          Str = Doctor.Str,
+                                          //Str = Doctor.Str,
 
                                           SpecializationName = Spesialisasi.Name,
 
                                           Fullname = Biodata.Fullname,
-                                          MobilePhone = Biodata.MobilePhone,
+                                          //MobilePhone = Biodata.MobilePhone,
                                           ImagePath = Biodata.ImagePath,
 
                                           Chat = (from MedicalItem in db.MMedicalItems
@@ -78,7 +78,7 @@ namespace MinPro.api.Controllers
                                                       PriceMin = MedicalItem.PriceMin,
                                                       PriceMax = MedicalItem.PriceMax
                                                   }).FirstOrDefault(),
-                                          
+
                                           Treatment = (from DoctorTreatment in db.TDoctorTreatments
                                                        join Doctor in db.MDoctors on DoctorTreatment.DoctorId equals Doctor.Id
 
@@ -94,7 +94,7 @@ namespace MinPro.api.Controllers
                                                            CreatedOn = DoctorTreatment.CreatedOn
 
                                                        }).ToList(),
- 
+
                                           Location = (from DoctorOfficeTreatments in db.TDoctorOfficeTreatments
                                                       join DoctorTreatment in db.TDoctorTreatments on DoctorOfficeTreatments.DoctorTreatmentId equals DoctorTreatment.Id
                                                       join DoctorOfficeTreatmentPrice in db.TDoctorOfficeTreatmentPrices on DoctorOfficeTreatments.Id equals DoctorOfficeTreatmentPrice.DoctorOfficeTreatmentId
@@ -108,15 +108,15 @@ namespace MinPro.api.Controllers
                                                       orderby DoctorOffice.Id descending
                                                       select new VMLocation
                                                       {
-                                                           DoctorId = DoctorOffice.DoctorId,
-                                                           Price = DoctorOfficeTreatmentPrice.Price,
-                                                           MedicalFacilityId = MedicalFacility.Id,
-                                                           MedicalFacilityName = MedicalFacility.Name,
-                                                           Specialization = DoctorOffice.Specialization,
-                                                           Location = Location.Name,
-                                                           FullAddress = MedicalFacility.FullAddress,
-                                                           StartDate = DoctorOffice.StartDate,
-                                                           EndDate = DoctorOffice.EndDate
+                                                          DoctorId = DoctorOffice.DoctorId,
+                                                          Price = DoctorOfficeTreatmentPrice.Price,
+                                                          MedicalFacilityId = MedicalFacility.Id,
+                                                          MedicalFacilityName = MedicalFacility.Name,
+                                                          Specialization = DoctorOffice.Specialization,
+                                                          Location = Location.Name,
+                                                          FullAddress = MedicalFacility.FullAddress,
+                                                          StartDate = DoctorOffice.StartDate,
+                                                          EndDate = DoctorOffice.EndDate
 
                                                       }).ToList(),
 

@@ -34,28 +34,7 @@ namespace MinPro.api.Controllers
             return data;
         }
 
-        [HttpGet("MenuAccess/{IdRole}")]
-        public List<VMMenuAccess> MenuAccess(int IdRole)
-        {
-            List<VMMenuAccess> listMenu = new List<VMMenuAccess>();
-
-            listMenu = (from parent in db.MMenus
-                        join ma in db.MMenuRoles
-                        on parent.Id equals ma.MenuId
-                        where parent.ParentId == parent.Id && ma.RoleId == IdRole
-                        && parent.IsDelete == false && ma.IsDelete == false
-                        select new VMMenuAccess
-                        {
-                            Id = parent.Id,
-                            MenuName = parent.Name,
-                            MenuAction = parent.Url,
-                            MenuController = parent.Url,
-                            IdRole = ma.Id
-                            
-                        }).OrderBy(a => a.MenuName).ToList();
-
-            return listMenu;
-        }
+        
 
         [HttpGet("Menu/{IdRole}")]
         public List<VMMenuAccess> Menu(int IdRole)
@@ -75,6 +54,39 @@ namespace MinPro.api.Controllers
                  MenuIcon = Men.SmallIcon,
                  IdRole = IdRole,
              }).ToList();
+
+            return listMenu;
+        }
+
+        [HttpGet("MenuAccess/{IdRole}")]
+        public List<VMMenuAccess> MenuAccess(int IdRole)
+        {
+            List<VMMenuAccess> listMenu = new List<VMMenuAccess>();
+
+            listMenu = (from parent in db.MMenus
+                        join mr in db.MMenuRoles
+                        on parent.Id equals mr.MenuId
+                        where parent.ParentId == null && mr.RoleId == IdRole
+                        && parent.IsDelete == false && mr.IsDelete == false
+                        select new VMMenuAccess
+                        {
+                            Id = parent.Id,
+                            MenuName = parent.Name,
+                            MenuUrl = parent.Url,
+                            MenuIcon = parent.SmallIcon,
+                            IdRole = mr.RoleId,
+                            ListChild = (from child in db.MMenus
+                                         where child.ParentId == parent.Id && child.IsDelete == false && mr.RoleId == IdRole
+                                         select new VMMenuAccess
+                                         {
+                                             Id = child.Id,
+                                             ParentId = parent.ParentId,
+                                             MenuName = child.Name,
+                                             MenuUrl = child.Url,
+                                             MenuIcon = child.SmallIcon,
+                                             IdRole = IdRole,
+                                         }).ToList(),
+                        }).ToList();
 
             return listMenu;
         }

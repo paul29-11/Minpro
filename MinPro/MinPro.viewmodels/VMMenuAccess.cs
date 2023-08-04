@@ -9,9 +9,11 @@ namespace MinPro.viewmodels
     public class VMMenuAccess
     {
         public long Id { get; set; }
+        public long? ParentId { get; set; }
         public string? MenuName { get; set; }
         public string? MenuController { get; set; }
         public string? MenuAction { get; set; }
+        public string? MenuUrl { get; set; }
         public string? MenuIcon { get; set; }
         public int? MenuSorting { get; set; }
         public bool? IsParent { get; set; }

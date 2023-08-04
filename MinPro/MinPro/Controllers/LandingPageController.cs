@@ -8,13 +8,15 @@ namespace MinPro.Controllers
     {
         private readonly FacilityService facilityService;
         private readonly DoctorService doctorService;
+        private AuthService authService;
         private readonly IWebHostEnvironment webHostEnvironment;
        
 
-        public LandingPageController(FacilityService _facilityService, DoctorService _doctorService)
+        public LandingPageController(FacilityService _facilityService, DoctorService _doctorService, AuthService _authService)
         {
             this.facilityService = _facilityService;
             this.doctorService = _doctorService;
+            this.authService = _authService;
         }
         public async Task<IActionResult> Index()
         {
