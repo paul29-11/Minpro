@@ -33,7 +33,7 @@
                         <ul class="dropdown-menu dropdown-menu-right">
                             @foreach (var child in parent.ListChild)
                             {
-                                @if (child.ParentId != child.Id && child.IdRole == IdRole)
+                                @if (child.ParentId != child.Id)
                                 {
                                     <li class="dropdown-item user-details">
                                         <a asp-controller="@child.MenuUrl" asp-action="Index">

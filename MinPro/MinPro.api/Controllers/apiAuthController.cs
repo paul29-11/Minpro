@@ -76,7 +76,9 @@ namespace MinPro.api.Controllers
                             MenuIcon = parent.SmallIcon,
                             IdRole = mr.RoleId,
                             ListChild = (from child in db.MMenus
-                                         where child.ParentId == parent.Id && child.IsDelete == false && mr.RoleId == IdRole
+                                         join mrr in db.MMenuRoles
+                                         on child.Id equals mrr.MenuId
+                                         where child.ParentId == parent.Id && child.IsDelete == false && mrr.RoleId == IdRole
                                          select new VMMenuAccess
                                          {
                                              Id = child.Id,
