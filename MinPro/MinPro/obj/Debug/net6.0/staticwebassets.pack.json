@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
     },
     {
+      "Id": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro\\wwwroot\\assets\\css\\custom-modal.css",
+      "PackagePath": "staticwebassets\\assets\\css\\custom-modal.css"
+    },
+    {
       "Id": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro\\wwwroot\\assets\\css\\icons.css",
       "PackagePath": "staticwebassets\\assets\\css\\icons.css"
     },
@@ -2313,6 +2317,10 @@
       "PackagePath": "staticwebassets\\assets\\plugins\\Chart.js\\chartjs-script.js"
     },
     {
+      "Id": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro\\wwwroot\\assets\\plugins\\Sweetalert2\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\Sweetalert2\\sweetalert2.js"
+    },
+    {
       "Id": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro\\wwwroot\\assets\\plugins\\fullcalendar\\css\\fullcalendar.css",
       "PackagePath": "staticwebassets\\assets\\plugins\\fullcalendar\\css\\fullcalendar.css"
     },
@@ -2375,6 +2383,22 @@
     {
       "Id": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro\\wwwroot\\assets\\plugins\\sparkline-charts\\sparkline-chart-script.js",
       "PackagePath": "staticwebassets\\assets\\plugins\\sparkline-charts\\sparkline-chart-script.js"
+    },
+    {
+      "Id": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro\\wwwroot\\assets\\plugins\\toastr\\toastr.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\toastr\\toastr.css"
+    },
+    {
+      "Id": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro\\wwwroot\\assets\\plugins\\toastr\\toastr.js.map",
+      "PackagePath": "staticwebassets\\assets\\plugins\\toastr\\toastr.js.map"
+    },
+    {
+      "Id": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro\\wwwroot\\assets\\plugins\\toastr\\toastr.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\toastr\\toastr.min.css"
+    },
+    {
+      "Id": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro\\wwwroot\\assets\\plugins\\toastr\\toastr.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\toastr\\toastr.min.js"
     },
     {
       "Id": "C:\\Batch_319\\FT2 Minpro\\Minpro\\MinPro\\MinPro\\wwwroot\\css\\bootstrap.css",

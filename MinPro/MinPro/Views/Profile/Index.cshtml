@@ -56,8 +56,7 @@
                         </div>
 
                     </div>
-            @foreach (var profile in Model)
-            {
+           
 
 
             <div class="col-lg-8">
@@ -77,60 +76,65 @@
                                 <div class="tab-content p-3">
 
                                 <div class="tab-pane active" id="profile">
-                                    <form>
+                                        <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
+
                                         <div class="form-group row">
                                             <label class="col-lg-3 col-form-label form-control-label">
                                                 <h5>User Profile</h5>
                                             </label>
                                             <div class="col-lg-9 text-right">
-                                                <i class="fa fa-edit fa-2x ml-2" data-toggle="modal" data-target="#modal"></i>
+                                            <button class="btn  btn-transparent btn_edit" title="Edit" dataid="@Model.Id">
+                                                <i class="fa fa-pencil text-white"></i>
+                                            </button>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-lg-3 col-form-label form-control-label">Full Name</label>
                                             <div class="col-lg-8">
-                                                <input class="form-control" type="text" value="@profile.Fullname">
+                                                <input class="form-control" type="text" value="@Model.Fullname" readonly>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-lg-3 col-form-label form-control-label">Tanggal Lahir</label>
                                             <div class="col-lg-8">
-                                                <input class="form-control" type="text" value="@profile.Dob?.ToString("dd MMMM yyyy")">
+                                        <input class="form-control" type="text" value="@Model.Dob?.ToString("dd MMMM yyyy")" readonly>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-3 col-form-label form-control-label">Nomor Handphone</label>
                                             <div class="col-lg-8">
-                                            <input class="form-control" type="text" value="@profile.MobilePhone">
+                                        <input class="form-control" type="text" value="@Model.MobilePhone" readonly>
                                         </div>
                                         </div>
-                                    </form>
 
                                     <h5 class="mb-3">Data Akun</h5>
-                                    <form>
+
                                         <div class="form-group row align-items-center">
                                             <label class="col-lg-3 col-form-label form-control-label">
                                                 Email
                                             </label>
                                             <div class="col-lg-9 d-flex">
-                                                <input class="form-control" type="email" value="@profile.Email">
-                                                <i class="fa fa-edit fa-2x ml-2"></i>
+                                        <input class="form-control" type="email" value="@Model.Email" readonly>
+                                        <button class="btn  btn-transparent btn_edit_email" title="Edit" dataid="@Model.Id">
+                                                <i class="fa fa-pencil text-white"></i>
+                                            </button>
                                             </div>
                                         </div>
-                                    </form>
-                                    <form>
+
                                         <div class="form-group row align-items-center">
                                             <label class="col-lg-3 col-form-label form-control-label">
                                                 Password
                                             </label>
                                             <div class="col-lg-9 d-flex">
-                                                <input class="form-control" type="password" value="@profile.Password">
-                                                <i class="fa fa-edit fa-2x ml-2"></i>
+                                                <input class="form-control" type="password" value="@Model.Password" readonly>
+                                        <button class="btn  btn-transparent btn_edit_password" title="Edit" dataid="@Model.Id">
+                                                <i class="fa fa-pencil text-white"></i>
+                                            </button>
                                             </div>
                                         </div>
-                                    </form>
+
                                         
 
                                         <!--/row-->
@@ -146,8 +150,36 @@
                     </div>
 
                 </div>
-            }
+            
         </div>
 </div>
 </div>
+<script>
+
+    $(".btn_edit").click(function () {
+        var id = $(this).attr("dataid")
+
+        $("#modal_body").empty()
+        $("#modal_body").load("/Profile/Edit?id=" + id)
+        $("#modal").modal("show")
+    })
+
+    $(".btn_edit_email").click(function () {
+        var id = $(this).attr("dataid")
+
+        $("#modal_body_sm").empty()
+        $("#modal_body_sm").load("/Profile/EditM?id=" + id)
+        $("#modal_sm").modal("show")
+    })
+
+    $(".btn_edit_password").click(function () {
+        var id = $(this).attr("dataid")
+
+        $("#modal_body_sm").empty()
+        $("#modal_body_sm").load("/Profile/EditP?id=" + id)
+        $("#modal_sm").modal("show")
+    })
+
+
+</script>
 

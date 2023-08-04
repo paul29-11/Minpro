@@ -500,3 +500,11 @@ C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\obj\Debug\net6.0\refint\MinPro.dll
 C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\obj\Debug\net6.0\MinPro.pdb
 C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\obj\Debug\net6.0\MinPro.genruntimeconfig.cache
 C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\obj\Debug\net6.0\ref\MinPro.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\bin\Debug\net6.0\MailKit.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\bin\Debug\net6.0\MimeKit.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\bin\Debug\net6.0\System.Formats.Asn1.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll

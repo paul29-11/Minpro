@@ -2972,6 +2972,13 @@ table.grid td {
 .text-light {
     color: rgba(255,255,255,.125)!important;
 }
+.text-yellow {
+    color: yellow;
+}
+
+.text-red {
+    color: red;
+}
 
 .text-light-1 {
     color: rgba(255, 255, 255, 0.70)!important;
@@ -3642,11 +3649,29 @@ table.grid td {
     padding-right: .0rem !important;
   }
 
-  .topbar-nav .navbar {
-    padding: 0px 10px 0 5px;
-  }
 
+    .topbar-nav .navbar {
+        padding: 0px 10px 0 5px;
+    }
 
+/* Custom CSS for the modal */
+    .custom-modal .modal-content {
+        background-color: #333; /* Replace this with your desired darker background color */
+        color: #fff; /* Set text color to white or any other contrasting color */
+    }
+
+    <style >
+    /* Custom style to remove padding for table headers */
+    .no-padding th,
+    .no-padding td {
+        padding: 0;
+    }
+    .btn-edit,
+    .btn-delete {
+        border: 1px solid black; /* Add a black border */
+
+    </style >
+    }
 }
 
 

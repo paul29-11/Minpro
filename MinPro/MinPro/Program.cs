@@ -8,6 +8,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ProfileService>();
 builder.Services.AddScoped<PasienService>();
+builder.Services.AddScoped<CustomerRelationService>();
+builder.Services.AddScoped<BloodGroupService>();
+
+// Add Session
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddSession(option =>
+{
+    option.IdleTimeout = TimeSpan.FromHours(1);
+    option.Cookie.HttpOnly = true;
+    option.Cookie.IsEssential = true;
+});
 
 builder.Services.AddDbContext<DB_SpesificationContext>(option =>
 {
@@ -32,6 +44,10 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+//add session
+app.UseSession();
+
 
 app.MapControllerRoute(
     name: "default",

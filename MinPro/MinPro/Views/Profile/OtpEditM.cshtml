@@ -1,0 +1,173 @@
+﻿@using MinPro.viewmodels
+@model VMTblProfile
+
+
+@{
+    ViewData["Title"] = "OTP Email";
+}
+
+<style>
+    /* Center the "Send OTP" text */
+    .send-otp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; /* Adjust the margin as needed */
+    }
+
+    /* Apply underline effect on hover */
+    .send-otp-text:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+</style>
+
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">@ViewData["Title"]</div>
+        <form asp-action="OtpEditM" method="post" id="form_input">
+            <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
+
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
+                    <input type="hidden" class="form-control" id="Email" name="Email" value="@Model.Email">
+                    <input type="text" class="form-control" id="Token" name="Token" placeholder="Masukkan Kode OTP">
+                    <div class="input-group-append">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-12 text-center">
+                    <span class="send-otp">
+                        <button><span class="send-otp-text" id="btn_send_otp">Resend OTP</span></button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-1">
+                    <button type="submit" class="btn btn-primary" id="btn_editm">Input</button>
+                    <a class="btn btn-dark" asp-controller="Profile" asp-action="Index">Back</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    $("#form_input").validate({
+        errorClass: "text-danger",
+        rules: {
+            Token: {
+                required: true,
+                minlength : 6,
+                maxlength: 6,
+            }
+        },
+        messages: {
+            Token: {
+                required: "Masukkan OTP",
+                minlength: "Minimal Char 6",
+                maxlength: "Maximal Char 6",
+            }
+        },
+        submitHandler: function () {
+            var email = $("#Email").val();
+            var id = @Model.Id
+            var token = $("#Token").val();
+
+            $.ajax({
+                url: '/Profile/CheckOTP',
+                type: 'get',
+                data: { token: token, id: id },
+                dataType: 'json',
+                success: function (respon) {
+                    var data = respon.dataRespon;
+                    if (data.success) {
+                        $.ajax({
+                            url: '/Profile/SubmitMail',
+                            type: 'post',
+                            data: { email: email, id: id },
+                            dataType: 'json',
+                            success: function (result) {
+                                var datasubmit = result.dataRespon;
+                                if (datasubmit.success) {
+                                    $("#modal_sm").modal("hide");
+                                    toastr.success(
+                                        datasubmit.message,
+                                        '',
+                                        {
+                                            timeOut: 3000,
+                                            fadeOut: 3000,
+                                            onHidden: function () {
+                                                window.location.reload();
+                                            }
+                                        }
+                                    );
+                                }
+                            },
+                            error: function () {
+                                toastr.error(datasubmit.message);
+                            }
+                        });
+                    }
+                    else
+                    {
+                        toastr.error(data.message);
+                    }
+                }
+            });
+
+        }
+    });
+
+
+    //function CheckOTP() {
+    //    var id = 0
+    //    var email = $("#Email").val()
+
+    //    $.ajax({
+    //        url: "/Profile/CheckOTP",
+    //        type: "get",
+    //        //method : "get",
+    //        data: { email: email, id: id },
+    //        dataType: "json",
+    //        success: function (respon) {
+    //            if (respon) {
+                    
+    //                return true
+
+    //            }
+    //            else {
+
+    //                toastr.warning("Kode OTP Tidak Benar.");
+
+    //                return false
+    //            }
+    //        }
+
+    //    })
+    //}
+
+
+    function sendOtpToEmail() {
+        var email = $("#Email").val();
+
+        $.ajax({
+            url: '/Profile/OtpEditM',
+            type: 'post',
+            data: { email: email },
+            dataType: 'json',
+            success: function (result) {
+                toastr.success("OTP sent successfully. Please check your email.");
+            },
+            error: function () {
+                toastr.error("Failed to send OTP. Please try again later.");
+            }
+        });
+    }
+
+   
+</script>

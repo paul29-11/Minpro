@@ -1,14 +1,29 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
 
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/popper.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <!-- Your other CSS and JS-->
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+
+
+    <!-- Your other CSS and JS imports -->
+
+    <link rel="stylesheet" href="~/assets/css/custom-modal.css">
 
     <!--favicon-->
+
     <link rel="icon" href="~/assets/images/favicon.ico" type="image/x-icon">
     <!-- Vector CSS -->
     <link href="~/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
@@ -24,10 +39,17 @@
     <link href="~/assets/css/sidebar-menu.css" rel="stylesheet" />
     <!-- Custom Style-->
     <link href="~/assets/css/app-style.css" rel="stylesheet" />
-    <!-- Bootstrap core JavaScript-->
-    <script src="~/assets/js/jquery.min.js"></script>
-    <script src="~/assets/js/popper.min.js"></script>
-    <script src="~/assets/js/bootstrap.min.js"></script>
+    <!-- SweetAlert2-->
+    <link href="~/assets/plugins/Sweetalert2/sweetalert2.js"/>
+    <!-- Toastr JavaScript -->
+    <script src="~/assets/plugins/toastr/toastr.min.js"></script>
+    <!-- Toastr CSS -->
+    <link href="~/assets/plugins/toastr/toastr.min.css" rel="stylesheet" />
+    <!-- SweetAlert2 JavaScript -->
+    <script src="~/assets/plugins/Sweetalert2/sweetalert2.js"></script>
+
+    <!-- SweetAlert2 CSS -->
+    <link href="~/assets/plugins/Sweetalert2/sweetalert2.css" rel="stylesheet" />
 
     <!-- simplebar js -->
     <script src="~/assets/plugins/simplebar/js/simplebar.js"></script>
@@ -43,7 +65,7 @@
     <script src="~/assets/plugins/Chart.js/Chart.min.js"></script>
 </head>
 
-<body class="bg-theme bg-theme2">>
+<body class="bg-theme bg-theme1">>
 
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
@@ -65,6 +87,50 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal  -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg custom-modal-content">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">@ViewData["Title"]</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal_body">
+                    . . .
+                </div>
+                @*                <div class="modal-footer custom-modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>*@
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SM -->
+    <div class="modal fade" id="modal_sm" tabindex="-1"
+         aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <h4 class="modal-title" id="modal_title_sm">@ViewData["Title"]</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal_body_sm">
+                    ...
+                </div>
+                <div class="modal-footer" id="modal_footer_sm">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 </body>
 </html>

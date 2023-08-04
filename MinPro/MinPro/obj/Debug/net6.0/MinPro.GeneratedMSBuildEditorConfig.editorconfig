@@ -16,6 +16,38 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Batch_319\FT2 Minpro\Minpro\MinPro\MinPro
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/BloodGroup/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvb2RHcm91cFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/BloodGroup/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvb2RHcm91cFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/BloodGroup/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvb2RHcm91cFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/BloodGroup/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvb2RHcm91cFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/CustomerRelation/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJSZWxhdGlvblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/CustomerRelation/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJSZWxhdGlvblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/CustomerRelation/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJSZWxhdGlvblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/CustomerRelation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJSZWxhdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -24,20 +56,52 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Pasien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzaWVuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Pasien/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzaWVuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Pasien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzaWVuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Pasien/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzaWVuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Pasien/MultipleDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzaWVuXE11bHRpcGxlRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Profile/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Profile/EditM.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxFZGl0TS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Profile/EditP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxFZGl0UC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Profile/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Profile/OtpEditM.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxPdHBFZGl0TS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Profile/Pasien.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQYXNpZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Profile/SureEditP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxTdXJlRWRpdFAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Batch_319/FT2 Minpro/Minpro/MinPro/MinPro/Views/Shared/Error.cshtml]

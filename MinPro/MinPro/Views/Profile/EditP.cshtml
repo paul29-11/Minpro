@@ -1,0 +1,81 @@
+﻿@using MinPro.viewmodels
+@model VMTblProfile
+
+@{
+    ViewData["Title"] = "Validasi Password Lama";
+}
+
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">@ViewData["Title"]</div>
+        <form asp-action="EditP" method="post" id="form_input">
+            <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
+
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="password" class="form-control" id="Password" name="Password" placeholder="Old Password" onchange="checkPasswordMatch()">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><span class="fa fa-lock"></span></span>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="password" class="form-control" id="re_password" name="re_password" placeholder="Retype password" onchange="checkPasswordMatch()">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><span class="fa fa-lock"></span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="button" class="btn btn-primary" id="btn_editp">Input</button>
+                    <a class="btn btn-dark" asp-controller="Profile" asp-action="Index">Back</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+                                <script>
+    $(document).ready(function () {
+        $("#btn_editp").click(function (e) {
+            e.preventDefault(); 
+            checkPasswordMatch();
+        });
+    });
+
+    function checkPasswordMatch() {
+        var password = $("#Password").val();
+        var rePassword = $("#re_password").val();
+
+        if (password && password === rePassword) {
+            $.ajax({
+                url: '/Profile/CheckPasswordIsExist',
+                type: 'post',
+                data: {
+                    password: password,
+                    id: @Model.Id
+                    },
+                dataType: 'json'
+            })
+            .done(function (result) {
+                if (result) {
+                    // Pindahkan kode untuk membuka modal langsung ke sini
+                    var id = @Model.Id;
+                    $("#modal_body_sm").empty();
+                    $("#modal_body_sm").load("/Profile/SureEditP?id=" + id);
+                    $("#modal_sm").modal("show");
+                } else {
+                    toastr.error("Invalid old password");
+                }
+            })
+        } else {
+            // Show password error message
+            toastr.error("Passwords do not match");
+        }
+    }
+</script>

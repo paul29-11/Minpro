@@ -1,18 +1,90 @@
 ﻿@using MinPro.viewmodels
 @model VMTblProfile
 
-<form id="editForm">
-    <div class="form-group">
-        <label for="fullname">Full Name</label>
-        <input type="text" class="form-control" id="fullname" name="fullname" value="@Model.Fullname">
-    </div>
-    <div class="form-group">
-        <label for="dob">Date of Birth</label>
-        <input type="text" class="form-control" id="dob" name="dob" value="@Model.Dob?.ToString("dd MMMM yyyy")">
-    </div>
-    <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="text" class="form-control" id="phone" name="phone" value="@Model.MobilePhone">
-    </div>
-    <button type="button" class="btn btn-primary" id="saveBtn">Save</button>
-</form>
+<div class="card">
+  <div class="card-body">
+    <div class="card-title">@ViewData["Title"]</div>
+    <form asp-action="Edit" method="post" id="form_input">
+            <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
+        <div class="form-group">
+            <label for="Fullname">Full Name</label>
+            <input type="text" class="form-control" id="Fullname" name="Fullname" value="@Model.Fullname">
+        </div>
+        <div class="form-group">
+            <label for="Dob">Date of Birth</label>
+            <input type="date" class="form-control" id="Dob" name="Dob" value="@Model.Dob?.ToString("yyyy-MM-dd")">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone" name="MobilePhone" value="@Model.MobilePhone">
+        </div>
+    @*    <button type="button" class="btn btn-primary" id="saveBtn">Save</button>*@
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Input</button>
+                <a class="btn btn-dark" asp-controller="Profile" asp-action="Index">Back</a>
+            </div>
+        </div>
+    </form>
+  </div>
+
+</div>
+
+
+<script>
+    $("#form_input").validate({
+        errorClass: "text-danger",
+        rules: {
+            Fullname: {
+                required: true,
+                minlength: 5,
+            },
+            Dob: {
+                required: true,
+            },
+        },
+        messages: {
+            Fullname: {
+                required: "Tolong isi Nama",
+                minlength: "Tolong Lebih Dari 5 karakter",
+            },
+            Dob: {
+                required: "Tolong isi Tanggal Lahir",
+            },
+        },
+        submitHandler: function (form) {
+            var dataForm = $(form).serialize();
+            fungsiSubmit(dataForm);
+        }
+    });
+
+    function fungsiSubmit(dataParam) {
+        $.ajax({
+            url: '/Profile/Edit',
+            type: "post",
+            data: dataParam,
+            dataType: "json",
+            success: function (respon) {
+                var data = respon.dataRespon;
+                if (data.success) {
+                    $("#modal").modal("hide");
+                    toastr.success(
+                        data.message,
+                        '',
+                        {
+                            timeOut: 1000,
+                            fadeOut: 1000,
+                            onHidden: function () {
+                                window.location.reload();
+                            }
+                        }
+                    );
+                }
+                else {
+                    // Use toastr.error to display the error message
+                    toastr.error(data.message);
+                }
+            }
+        });
+    }
+</script>

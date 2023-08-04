@@ -1,0 +1,188 @@
+﻿@using MinPro.viewmodels
+@model VMTblProfile
+
+@{
+    ViewData["Title"] = "Validasi Email";
+}
+
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">@ViewData["Title"]</div>
+        <form asp-action="EditM" method="post" id="form_input">
+            <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
+
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="email" class="form-control" id="Email" name="Email" placeholder="Masukkan Email Baru" onchange="checkByEmail()">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><span class="icon-envelope"></span></span>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary" id="btn_editm">Input</button>
+                    <a class="btn btn-dark" asp-controller="Profile" asp-action="Index">Back</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@*<script>
+    $("#form_input").validate({
+        errorClass: "text-danger",
+        rules: {
+            Email: {
+                required: true,
+                email:true,  
+            }
+        },
+        messages: {
+            Email: {
+                required: "Masukkan Email",
+                email: "Email tidak Valid",
+            }
+        },
+        submitHandler: function () {
+            var email = $("#Email").val();
+            var id = @Model.Id;
+            $("#modal_body_sm").empty();
+            $("#modal_body_sm").load("/Profile/OtpEditM?id=" + id +"&email=" + email, function (response, status, xhr) {
+                if (status === "success") {
+
+                    $.ajax({
+                        url: '/Profile/OtpEditM',
+                        type: 'post',
+                        data: { email: email },
+                        dataType: 'json',
+                        success: function (result) {
+                            //toastr.success("OTP sent successfully. Please check your email.");
+                            toastr.success(
+                                "OTP sent successfully. Please check your email.",
+                                '',
+                                {
+                                    timeOut: 1000,
+                                    fadeOut: 1000,
+                                    onHidden: function () {
+                                        $("#modal_sm").modal("show");
+                                    }
+                                }
+                            )
+                        },
+                        error: function () {
+                            toastr.error("Failed to send OTP. Please try again later.");
+                        }
+                    });
+
+                } else {
+                    console.error("Error loading content:", xhr.status, xhr.statusText);
+                }
+            });
+
+        }
+    
+    })
+
+    function checkByEmail() {
+        var email = $("#Email").val();
+        $.ajax({
+            url: '/Profile/CheckEmailIsExist',
+            type: 'post',
+            data: { email: email, id: @Model.Id },
+            dataType: 'json',
+            success: function (result) {
+                if (result) {
+                    toastr.warning("Email is already registered.");
+                    return false
+
+                } else {
+                    return true
+                }
+            },
+            error: function () {
+                toastr.error("Failed to check email.");
+            }
+        });
+    }
+</script>*@
+
+
+            <script>
+    $("#form_input").validate({
+        errorClass: "text-danger",
+        rules: {
+            Email: {
+                required: true,
+                email: true,
+            }
+        },
+        messages: {
+            Email: {
+                required: "Masukkan Email",
+                email: "Email tidak Valid",
+            }
+        },
+        submitHandler: function () {
+            // Check if email exists
+            var email = $("#Email").val();
+            var id = @Model.Id;
+
+            $.ajax({
+                url: '/Profile/CheckEmailIsExist',
+                type: 'post',
+                data: { email: email, id: id },
+                dataType: 'json',
+                success: function (result) {
+                    if (result) {
+                        toastr.warning("Email is already registered.");
+                    } else {
+                        // Email does not exist, send OTP
+                        sendOtpToEmail(email, id);
+                    }
+                },
+                error: function () {
+                    toastr.error("Failed to check email.");
+                }
+            });
+        }
+    });
+
+    function sendOtpToEmail(email, id) {
+        $.ajax({
+            url: '/Profile/OtpEditM',
+            type: 'post',
+            data: { email: email, id: id },
+            dataType: 'json',
+            success: function (result) {
+                if(result)
+                {
+                    //toastr.success(
+                    //    "OTP sent successfully. Please check your email.",
+                    //    '',
+                    //    {
+                    //        timeOut: 1000,
+                    //        fadeOut: 1000,
+                    //        onHidden: function () {
+                    //            $("#form_input").submit();
+                    //            $("#modal_body_sm").empty();
+                    //            $("#modal_body_sm").load("/Profile/OtpEditM?id=" + id + "&email=" + email
+                    //            $("#modal_sm").modal("show");
+                    //        }
+                    //    }
+                    //);
+                    var id = @Model.Id;
+                    $("#modal_body_sm").empty();
+                    $("#modal_body_sm").load("/Profile/OtpEditM?id=" + id + "&email=" + email);
+                    $("#modal_sm").modal("show");
+                }
+            },
+            error: function () {
+                toastr.error("Failed to send OTP. Please try again later.");
+            }
+        });
+    }
+
+</script>

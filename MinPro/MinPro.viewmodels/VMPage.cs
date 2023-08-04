@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace xpos319.viewmodels
+namespace MinPro.viewmodels
 {
     public class VMPage
     {

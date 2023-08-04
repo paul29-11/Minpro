@@ -16,6 +16,8 @@ namespace MinPro.viewmodels
         public long RoleId { get; set; }
         public long CustomerId { get; set; }
         public string Fullname { get; set; }
+
+        public string? Token { get; set; }
         public DateTime? Dob { get; set; }
         public string? MobilePhone { get; set; }
         public string? Email { get; set; }
