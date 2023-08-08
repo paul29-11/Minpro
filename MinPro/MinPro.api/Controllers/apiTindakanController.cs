@@ -72,7 +72,7 @@ namespace MinPro.api.Controllers
         [HttpPost("Save")]
         public VMResponse Save(TDoctorTreatment data)
         {
-            //data.Image = data.Image ?? "";
+            
             data.DoctorId = DoctorId;
             data.CreatedBy = IdUser;
             data.CreatedOn = DateTime.Now;

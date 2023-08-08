@@ -55,7 +55,8 @@
                                                     <tbody>
                                                         <tr>
                                                             <th scope="row">@R.Specialization</th>
-                                                            <td style="text-align:right;">@R.StartDate?.ToString("yyyy") - @(R.EndDate.Value.Year == DateTime.Now.Year ? "Sekarang" : @R.EndDate?.ToString("yyyy"))</td>
+                                                            <td style="text-align:right;">@R.StartDate?.ToString("yyyy") - @(R.EndDate == null ? "Sekarang" : @R.EndDate?.ToString("yyyy"))</td>
+                                                            @*<td style="text-align:right;">@R.StartDate?.ToString("yyyy") - @(R.EndDate.Value.Year = DateTime.Now.Year ? "Sekarang" : @R.EndDate?.ToString("yyyy"))</td>*@
                                                         </tr>
                                                     </tbody>
                                                 </table>                  
@@ -159,55 +160,60 @@
                             <h5 class="mb-3">Lokasi Praktek</h5>
                             @foreach (var location in Model.Location)
                             {
-                                <div class="row">
-                                    <div class="card-body">
-                                        <h5 class="card-title">@location.Location</h5>
-                                        
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            @location.Specialization
-                                                            <br>
-                                                            <i class="fa fa-map-marker"> @location.FullAddress</i>
-                                                        </td>
-                                                        <td style="text-align:right">
-                                                            <p>Konsultasi Mulai Dari</p>
-                                                            <p>Rp. @location.Price?.ToString("#,#0")</p>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <i class="fa fa-sort-desc show-schedule"> Lihat Jadwal Praktek </i>
-                                            <i class="fa fa-sort-asc hide-schedule" style="display: none;"> Sembunyikan Jadwal Praktek </i>
-                                            <table class="table schedule-table" style="display: none;">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <table class="table">
-                                                                @foreach (var schedule in @Model.Schedule)
-                                                                {
-                                                                    if(location.MedicalFacilityId == schedule.MedicalFacilityScheduleId)
+                               @* if(location.EndDate.Value.Year >= DateTime.Now.Year)
+                                {*@
+                                    <div class="row">
+                                        <div class="card-body">
+                                            <h5 class="card-title">@location.Location</h5>
+
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                @location.Specialization
+                                                                <br>
+                                                                <i class="fa fa-map-marker"> @location.FullAddress</i>
+                                                            </td>
+                                                            <td style="text-align:right">
+                                                                <p>Konsultasi Mulai Dari</p>
+                                                                <p>Rp. @location.Price?.ToString("#,#0")</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <i class="fa fa-sort-desc show-schedule"> Lihat Jadwal Praktek </i>
+                                                <i class="fa fa-sort-asc hide-schedule" style="display: none;"> Sembunyikan Jadwal Praktek </i>
+                                                <table class="table schedule-table" style="display: none;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <table class="table">
+                                                                    @foreach (var schedule in @Model.Schedule)
                                                                     {
-                                                                         <tbody>
+                                                                        if (location.MedicalFacilityId == schedule.MedicalFacilityScheduleId)
+                                                                        {
+                                                                            <tbody>
                                                                             <td>@schedule.Day </td>
                                                                             <td>@schedule.StarTime -  @schedule.EndTime </td>
-                                                                        </tbody>
+                                                            </tbody>
+                                                                        }
+
                                                                     }
-                                                                   
-                                                                } 
-                                                            </table>                                                           
-                                                        </td>
-                                                        <td style="text-align:right">
-                                                            <button type="submit" class="btn btn-light px-5">Buat Janji</button>
-                                                        </td>
-                                                    </tr>
+                                                </table>
+                                                </td>
+                                                <td style="text-align:right">
+                                                    <button type="submit" class="btn btn-light px-5">Buat Janji</button>
+                                                </td>
+                                                </tr>
                                                 </tbody>
-                                            </table>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                               @* }*@
+                                
+                                
                              }   
                             
                             <!--/row-->

@@ -88,10 +88,7 @@ namespace MinPro.api.Controllers
                                                        {
                                                            Id = DoctorTreatment.Id,
                                                            DoctorId = Doctor.Id,
-                                                           Name = DoctorTreatment.Name,
-
-                                                           CreatedBy = DoctorTreatment.CreatedBy,
-                                                           CreatedOn = DoctorTreatment.CreatedOn
+                                                           Name = DoctorTreatment.Name
 
                                                        }).ToList(),
 
@@ -104,7 +101,8 @@ namespace MinPro.api.Controllers
                                                       join MedicalFacility in db.MMedicalFacilities on DoctorOffice.MedicalFacilityId equals MedicalFacility.Id
                                                       join Location in db.MLocations on MedicalFacility.LocationId equals Location.Id
                                                       join LocationLevel in db.MLocationLevels on Location.LocationLevelId equals LocationLevel.Id
-                                                      where DoctorOffice.IsDelete == false && DoctorTreatment.DoctorId == id
+                                                      where DoctorOffice.IsDelete == false && DoctorTreatment.DoctorId == id 
+                                                      && DoctorOffice.EndDate == null || DoctorOffice.EndDate >= DateTime.Now
                                                       orderby DoctorOffice.Id descending
                                                       select new VMLocation
                                                       {
@@ -156,7 +154,6 @@ namespace MinPro.api.Controllers
                                                                  StartDate = DoctorOffice.StartDate,
                                                                  EndDate = DoctorOffice.EndDate,
                                                                  Experience = currentYear - DoctorOffice.StartDate.Year
-                                                                 //Experience = Convert.ToInt32(Convert.ToDateTime(DoctorOffice.EndDate).Year - DoctorOffice.StartDate.Year)
 
                                                              }).ToList(),
 
