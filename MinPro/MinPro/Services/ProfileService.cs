@@ -157,6 +157,35 @@ namespace MinPro.Services
             return respon;
         }
 
+        public async Task<VMResponse> ResendOTP(MUser dataParam)
+        {
+            // Proses convert dari objek ke string
+            string json = JsonConvert.SerializeObject(dataParam);
+
+            // Preses convert string menjadi Json lalu dikirim sbagai request body
+            StringContent content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+
+            // Proses memanggil api dan mengirimkan body
+            var request = await client.PutAsync(RouteAPI + "apiProfile/ResendOTP", content);
+
+            if (request.IsSuccessStatusCode)
+            {
+                // Proses membaca respon membca api
+                var apiRespon = await request.Content.ReadAsStringAsync();
+
+                // Proses Convert hasil respon dari api ke objeck
+                respon = JsonConvert.DeserializeObject<VMResponse>(apiRespon);
+            }
+            else
+            {
+                respon.Success = false;
+                respon.Message = $"{request.StatusCode} : {request.ReasonPhrase}";
+
+            }
+
+            return respon;
+        }
+
         public async Task<VMResponse> SubmitMail(MUser dataParam)
         {
             // Proses convert dari objek ke string

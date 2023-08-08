@@ -120,7 +120,7 @@
     })
 
     $("#btn_create").click(function () {
-        $("#modal_title_sm").text("Create BloodType")
+        $("#modal_title_sm").text("BloodType Group")
         $("#modal_body_sm").empty()
         $("#modal_body_sm").load("/BloodGroup/Create")
         $("#modal_sm").modal("show")
@@ -129,14 +129,16 @@
     $(".btn_edit").click(function () {
         var id = $(this).attr("dataid")
 
-        $("#modal_body").empty()
-        $("#modal_body").load("/BloodGroup/Edit?id=" + id)
-        $("#modal").modal("show")
+        $("#modal_title_sm").text("BloodType Group")
+        $("#modal_body_sm").empty()
+        $("#modal_body_sm").load("/BloodGroup/Edit?id=" + id)
+        $("#modal_sm").modal("show")
     })
 
     $(".btn_detail").click(function () {
         var id = $(this).attr("dataid")
 
+        $("#modal_title_sm").text("BloodType Group")
         $("#modal_body").empty()
         $("#modal_body").load("/BloodGroup/Detail?id=" + id)
         $("#modal").modal("show")
@@ -145,6 +147,7 @@
     $(".btn_delete").click(function () {
         var id = $(this).attr("dataid")
 
+        $("#modal_title_sm").text("BloodType Group")
         $("#modal_body_sm").empty()
         $("#modal_body_sm").load("/BloodGroup/Delete?id=" + id)
         $("#modal_sm").modal("show")

@@ -5,7 +5,7 @@
     Layout = null;
     ViewData["Title"] = "Edit Relation ";
 }
-<div class="h4 md-4">@ViewData["Title"]</div>
+<div class="h6 md-4">@ViewData["Title"]</div>
 
 <div class="card">
     <div class="card-body">
@@ -13,17 +13,19 @@
         <form asp-action="Edit" method="post" id="form_input">
             <input type="hidden" id="id" name="id" value="@Model.Id" />
             <div class="mb-4 row">
-                <label for="name" class="col-sm-3.5 col-form-label">Nama</label>
-                <div class="col-sm-8.5">
+                <label for="name" class="col-sm-4 col-form-label">Nama</label>
+                <div class="col-sm-12">
                     <input type="text" class="form-control" id="name" name="name" value="@Model.Name">
                     <span id="validate_name" class="text-danger"></span>
                 </div>
             </div>
             <br>
             <div class="form-group row">
-                <div class="col-sm-10">
+                <div class="col-sm-12">
+                    <p align="right">
                     <button type="submit" class="btn btn-primary">Input</button>
                     <a class="btn btn-dark" asp-controller="CustomerRelation" asp-action="Index">Back</a>
+                    </p>
                 </div>
             </div>
         </form>

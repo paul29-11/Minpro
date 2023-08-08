@@ -9,17 +9,22 @@
 <div class="card">
     <div class="card-body">
         <form asp-action="SureMultipleDelete" method="post" id="form_delete">
-            <div class="mb-4 row">
-                <div class="col-sm-8.5">
+            <div class="mb-12 row">
+                <div class="col-sm">
                     <div class="form-group">
                         <p style="text-align:center;">Apakah Kamu Yakin Mau Hapus ?</p>
                         @foreach (var item in ViewBag.Listname)
                         {
                             <p style="text-align:center; color:azure;">@item</p>
                         }
-                        <button type="submit" class="btn btn-light px-5"> DELETE!</button>
-                        <a asp-asp-action="Pasien" asp-action="Index" class="btn-light">no </a>
-
+                        <br />
+                        <br />
+                        <div>
+                        <p align="right">
+                        <button type="submit" class="btn btn-light"> DELETE!</button>
+                        <a class="btn btn-light" asp-controller="Pasien" asp-action="Index">Back</a>
+                        </p>
+                        </div>
                     </div>
                 </div>
             </div>  

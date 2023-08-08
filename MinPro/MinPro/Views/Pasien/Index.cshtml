@@ -22,7 +22,7 @@
                     <div class="media align-items-center">
                         <div class="media-body text-left ml-3">
                             <div class="progress-wrapper">
-                                <a asp-area="" asp-controller="Profile" asp-action="Index"><p>Pasien </p></a>
+                                <a asp-area="" asp-controller="Profile" asp-action="Index"><p>Profile </p></a>
                             </div>
                         </div>
                     </div>
@@ -74,14 +74,31 @@
                                     </div>
                                 </div>
                             </form>
-                                    <div class="input-group-prepend">
+                                    @*<div class="input-group-prepend">
                                 <a  asp-action="Index" 
                                     asp-route-sortOrder="@ViewBag.NameSort" 
                                     asp-route-currentFilter="@ViewBag.CurrentFilter"
                                     asp-route-pageSize="@ViewBag.CurrentPageSize">
                                             <i class="fa fa-sort"></i>
-                                        </a>
-                                    </div>
+                                </a>
+                                    </div>*@
+                            <div class="input-group-prepend">
+                                <select class="custom-select" id="sortDropdown" onchange="handleSortChange(this.value)">
+                                    <option value="" disabled selected>@(string.IsNullOrEmpty(ViewBag.Currentsort) ? "Please select sort by" : ViewBag.Currentsort)</option>
+                                    <option value="Name">Name</option>
+                                    <option value="Age">Age</option>
+                                    <option value="Chat">Chat Count</option>
+                                    <option value="Appointment">Appointment Count</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <input type="button" onclick="change()" class="btn btn-asc" id="btnasc" value="asc"></input>
+                            </div>
+
+
+
+
                         </div>
                         <div>
                             <button id="btn_create" class="btn btn-primary btn-sm mr-2">Create</button>
@@ -89,7 +106,7 @@
                         </div>
                     </div>
                     <div class="list-group">
-                        @if (Model != null)
+                        @if (Model.Count != 0)
                         {
                             @foreach (var patient in Model)
                             {
@@ -113,6 +130,12 @@
                                             <span class="patient-age" style="font-size: 14px;">@age years</span>
                                         }
                                     </div>
+                                    <div class ="ml-3">
+                                            
+                                            <span class="patient-chatcount" style="font-size: 14px;">@patient.ChatCount Chat Online,</span>
+                                            <span class="patient-appointment" style="font-size: 14px;">@patient.AppointmentCount Janji Dokter</span>
+                                    </div>
+
                                 </div>
 
                                     <div class="d-flex">
@@ -131,7 +154,11 @@
                     }
                     else
                     {
-                        <p>No data available.</p>
+                            <tr>
+                                <td class="text-center" colspan="5">
+                                    <i>Data not found</i>
+                                </td>
+                            </tr>
                     }
                 </div>
                 <div class="card-footer">
@@ -235,4 +262,22 @@
         $("#modal_sm").modal("show")
     })
 
+    function handleSortChange(selectedValue) {
+        if (selectedValue !== "") {
+            // Redirect to the Index action with the selected sorting option
+            window.location.href = `/Pasien/Index?sortOrder=${selectedValue}&currentFilter=@ViewBag.CurrentFilter&pageSize=@ViewBag.CurrentPageSize`;
+        }
+    }
+
+    function change(){
+        var but = document.getElementById("btnasc");
+        if (but.value == "asc")
+        {(but.value="desc")
+        toastr.success("Desc")}
+        else if (but.values="desc") 
+        { (but.value = "asc")
+            toastr.success("asc")
+        }
+    }
+    
                                 </script>

@@ -15,3 +15,7 @@
 .modal-footer {
     /* Add any specific styles for the modal footer here */
 }
+#validate_Email {
+    display: block;
+    margin-top: 5px;
+}

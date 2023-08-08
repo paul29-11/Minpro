@@ -2,7 +2,7 @@
 @model VMTblProfile
 
 @{
-    ViewData["Title"] = "Validasi Password Lama";
+    ViewData["Title"] = "Edit Password";
 }
 
 <div class="card">
@@ -13,25 +13,30 @@
 
             <div class="form-group">
                 <div class="input-group">
-                    <input type="password" class="form-control" id="Password" name="Password" placeholder="Old Password" onchange="checkPasswordMatch()">
+                    <input type="password" class="form-control" id="Password" name="Password" placeholder="Old Password">
                     <div class="input-group-append">
-                        <span class="input-group-text"><span class="fa fa-lock"></span></span>
+                        <button type="button" class="btn btn-light" onmousedown="togglePasswordVisibility()" onmouseup="resetPasswordButton()">
+                            <span id="passwordIcon" class="fa fa-eye-slash"></span>
+                        </button>
                     </div>
                 </div>
+                <span id="error_Password" class="text-danger"></span>
             </div>
-            <br />
             <div class="form-group">
                 <div class="input-group">
-                    <input type="password" class="form-control" id="re_password" name="re_password" placeholder="Retype password" onchange="checkPasswordMatch()">
+                    <input type="password" class="form-control" id="re_password" name="re_password" placeholder="Retype password" >
                     <div class="input-group-append">
-                        <span class="input-group-text"><span class="fa fa-lock"></span></span>
+                        <button type="button" class="btn btn-light" onmousedown="toggleRePasswordVisibility()" onmouseup="resetRePasswordButton()">
+                            <span id="rePasswordIcon" class="fa fa-eye-slash"></span>
+                        </button>
                     </div>
                 </div>
+                <span id="error_re_password" class="text-danger"></span>
             </div>
 
             <div class="form-group row">
                 <div class="col-sm-10">
-                    <button type="button" class="btn btn-primary" id="btn_editp">Input</button>
+                    <button type="submit" class="btn btn-primary" id="btn_editp">Input</button>
                     <a class="btn btn-dark" asp-controller="Profile" asp-action="Index">Back</a>
                 </div>
             </div>
@@ -40,42 +45,162 @@
 </div>
 
 
-                                <script>
-    $(document).ready(function () {
-        $("#btn_editp").click(function (e) {
-            e.preventDefault(); 
-            checkPasswordMatch();
-        });
+<script>
+    //$(document).ready(function () {
+    //    $("#btn_editp").click(function (e) {
+    //        e.preventDefault(); 
+    //        checkPasswordMatch();
+    //    });
+    //});
+
+    //function checkPasswordMatch() {
+    //    var password = $("#Password").val();
+    //    var rePassword = $("#re_password").val();
+
+    //    if (password && password === rePassword) {
+    //        $.ajax({
+    //            url: '/Profile/CheckPasswordIsExist',
+    //            type: 'post',
+    //            data: {
+    //                password: password,
+    //                id: @Model.Id
+    //                },
+    //            dataType: 'json'
+    //        })
+    //        .done(function (result) {
+    //            if (result) {
+    //                // Pindahkan kode untuk membuka modal langsung ke sini
+    //                var id = @Model.Id;
+    //                $("#modal_body_sm").empty();
+    //                $("#modal_body_sm").load("/Profile/SureEditP?id=" + id);
+    //                $("#modal_sm").modal("show");
+    //            } else {
+    //                toastr.error("Invalid old password");
+    //            }
+    //        })
+    //    } else {
+    //        // Show password error message
+    //        toastr.error("Passwords do not match");
+    //    }
+    //}
+
+    var passwordVisible = false;
+    var rePasswordVisible = false;
+
+    function togglePasswordVisibility() {
+        passwordVisible = !passwordVisible;
+        var passwordInput = $("#Password");
+        var passwordIcon = $("#passwordIcon");
+
+        if (passwordVisible) {
+            passwordInput.attr("type", "text");
+            passwordIcon.removeClass("fa-eye-slash");
+            passwordIcon.addClass("fa-eye");
+        } else {
+            passwordInput.attr("type", "password");
+            passwordIcon.removeClass("fa-eye");
+            passwordIcon.addClass("fa-eye-slash");
+        }
+    }
+
+    function toggleRePasswordVisibility() {
+        rePasswordVisible = !rePasswordVisible;
+        var rePasswordInput = $("#re_password");
+        var rePasswordIcon = $("#rePasswordIcon");
+
+        if (rePasswordVisible) {
+            rePasswordInput.attr("type", "text");
+            rePasswordIcon.removeClass("fa-eye-slash");
+            rePasswordIcon.addClass("fa-eye");
+        } else {
+            rePasswordInput.attr("type", "password");
+            rePasswordIcon.removeClass("fa-eye");
+            rePasswordIcon.addClass("fa-eye-slash");
+        }
+    }
+
+    function resetPasswordButton() {
+        // Reset password visibility when the mouse button is released
+        passwordVisible = false;
+        var passwordInput = $("#Password");
+        var passwordIcon = $("#passwordIcon");
+        passwordInput.attr("type", "password");
+        passwordIcon.removeClass("fa-eye");
+        passwordIcon.addClass("fa-eye-slash");
+    }
+
+    function resetRePasswordButton() {
+        // Reset retype password visibility when the mouse button is released
+        rePasswordVisible = false;
+        var rePasswordInput = $("#re_password");
+        var rePasswordIcon = $("#rePasswordIcon");
+        rePasswordInput.attr("type", "password");
+        rePasswordIcon.removeClass("fa-eye");
+        rePasswordIcon.addClass("fa-eye-slash");
+    }
+
+
+    $("#form_input").validate({
+        errorClass: "text-danger",
+        errorPlacement: function (error, element) {
+            if (element.attr("name") === "Password") {
+                error.appendTo($("#error_Password"));
+            } else if (element.attr("name") === "re_password") {
+                error.appendTo($("#error_re_password"));
+            } else {
+            }
+        },
+        rules: {
+            Password: {
+                required: true,
+            },
+            re_password: {
+                required: true,
+                equalTo: "#Password",
+            }
+        },
+        messages: {
+            Password: {
+                required: "Masukkan Password",
+            },
+            re_password: {
+                required: "Masukkan Password",
+                equalTo: "Password Tidak Sama.",
+            }
+        },
+        submitHandler: function () {
+         checkPasswordMatch();
+        }
     });
 
     function checkPasswordMatch() {
-        var password = $("#Password").val();
-        var rePassword = $("#re_password").val();
+            var password = $("#Password").val();
+            var rePassword = $("#re_password").val();
 
-        if (password && password === rePassword) {
-            $.ajax({
-                url: '/Profile/CheckPasswordIsExist',
-                type: 'post',
-                data: {
-                    password: password,
-                    id: @Model.Id
-                    },
-                dataType: 'json'
-            })
-            .done(function (result) {
-                if (result) {
-                    // Pindahkan kode untuk membuka modal langsung ke sini
-                    var id = @Model.Id;
-                    $("#modal_body_sm").empty();
-                    $("#modal_body_sm").load("/Profile/SureEditP?id=" + id);
-                    $("#modal_sm").modal("show");
-                } else {
-                    toastr.error("Invalid old password");
-                }
-            })
-        } else {
-            // Show password error message
-            toastr.error("Passwords do not match");
+            if ( password === rePassword) {
+                $.ajax({
+                    url: '/Profile/CheckPasswordIsExist',
+                    type: 'post',
+                    data: {
+                        password: password,
+                        id: @Model.Id
+                        },
+                    dataType: 'json'
+                })
+                .done(function (result) {
+                    if (result) {
+                        var id = @Model.Id;
+                        $("#modal_body_sm").empty();
+                        $("#modal_body_sm").load("/Profile/SureEditP?id=" + id);
+                        $("#modal_sm").modal("show");
+                    } else {
+                        toastr.error("Invalid old password");
+                    }
+                })
+            } else {
+                toastr.error("Passwords do not match");
+            }
         }
-    }
+
+
 </script>

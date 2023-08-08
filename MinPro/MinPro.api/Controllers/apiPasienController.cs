@@ -94,6 +94,10 @@ namespace MinPro.api.Controllers
                                       join b in db.MBiodata on c.BiodataId equals b.Id
                                       join bg in db.MBloodGroups on c.BloodGroupId equals bg.Id into bloodGroups
                                       from bg in bloodGroups.DefaultIfEmpty()
+                                      join a in db.TAppointments on c.Id equals a.CustomerId into appointments
+                                      from a in appointments.DefaultIfEmpty()
+                                      join oc in db.TCustomerChats on c.Id equals oc.CustomerId into customerChat
+                                      from oc in customerChat.DefaultIfEmpty()
                                       where cm.IsDelete == false && cm.ParentBiodataId == id
                                       select new VMTblPasien
                                       {
@@ -110,9 +114,11 @@ namespace MinPro.api.Controllers
                                           Height = c.Height,
                                           Weight = c.Weight,
                                           Name = cr.Name,
+                                          ChatCount = db.TCustomerChats.Count(countchat => countchat.CustomerId == c.Id),
+                                          AppointmentCount = db.TAppointments.Count(countappointment => countappointment.CustomerId == c.Id),
 
                                           CreatedBy = c.Id
-                                      }).ToList();
+                                      }).Distinct().ToList();
             return (data);
         }
 

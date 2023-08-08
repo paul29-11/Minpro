@@ -6,21 +6,6 @@
     ViewData["Title"] = "OTP Email";
 }
 
-<style>
-    /* Center the "Send OTP" text */
-    .send-otp {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px; /* Adjust the margin as needed */
-    }
-
-    /* Apply underline effect on hover */
-    .send-otp-text:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
-</style>
 
 <div class="card">
     <div class="card-body">
@@ -28,7 +13,7 @@
         <form asp-action="OtpEditM" method="post" id="form_input">
             <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
 
-            <div class="form-group">
+            @*<div class="form-group">
                 <div class="input-group">
                     <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
                     <input type="hidden" class="form-control" id="Email" name="Email" value="@Model.Email">
@@ -36,13 +21,20 @@
                     <div class="input-group-append">
                     </div>
                 </div>
+            </div>*@
+
+            <div class="mb-4 row">
+                <div class="col-sm-12">
+                    <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
+                    <input type="hidden" class="form-control" id="Email" name="Email" value="@Model.Email">
+                    <input type="text" class="form-control" id="Token" name="Token" placeholder="Masukkan Kode OTP">
+                    <span id="validate_FullName" class="textdanger"></span>
+                </div>
             </div>
 
             <div class="form-group row">
                 <div class="col-sm-12 text-center">
-                    <span class="send-otp">
-                        <button><span class="send-otp-text" id="btn_send_otp">Resend OTP</span></button>
-                    </span>
+                    <button class="btn btn-transparent" id="resend_otp">Resend OTP</button>
                 </div>
             </div>
 
@@ -56,7 +48,56 @@
     </div>
 </div>
 
+
+
 <script>
+
+    $("#resend_otp").click(function () {
+        resendOtpToEmail();
+    });
+
+    var mins;
+    var secs;
+    var interval;
+
+    $("#resend_otp").click(function () {
+            mins = 0;
+            secs = 20;
+            var btn = $(this);
+            btn.attr("disabled", true);
+            interval = setInterval(function () {
+                if (mins >= 0 && secs >= 0) {
+                    btn.text("Resend Code in " + pad(mins, 2) + ":" + pad(secs, 2));
+                    if (secs > 0) {
+                        secs--;
+                    } else {
+                        secs = 59;
+                        mins--;
+                    }
+                    if (mins < 0) {
+                        clearInterval(interval);
+                        btn.removeAttr("disabled").text("Send Code");
+                        return true;
+                    }
+                }
+                console.log("Mins: " + mins + ", Secs: " + secs);
+            }, 1000);
+        });
+
+
+    function pad(num, size) {
+        var s = num + "";
+        while (s.length < size) s = "0" + s;
+        return s;
+    }
+
+    function pad(num, size) {
+        var s = num + "";
+        while (s.length < size) s = "0" + s;
+        return s;
+    }
+
+
     $("#form_input").validate({
         errorClass: "text-danger",
         rules: {
@@ -124,47 +165,19 @@
     });
 
 
-    //function CheckOTP() {
-    //    var id = 0
-    //    var email = $("#Email").val()
-
-    //    $.ajax({
-    //        url: "/Profile/CheckOTP",
-    //        type: "get",
-    //        //method : "get",
-    //        data: { email: email, id: id },
-    //        dataType: "json",
-    //        success: function (respon) {
-    //            if (respon) {
-                    
-    //                return true
-
-    //            }
-    //            else {
-
-    //                toastr.warning("Kode OTP Tidak Benar.");
-
-    //                return false
-    //            }
-    //        }
-
-    //    })
-    //}
-
-
-    function sendOtpToEmail() {
-        var email = $("#Email").val();
+    function resendOtpToEmail(email, id) {
+        var id = @Model.Id
 
         $.ajax({
-            url: '/Profile/OtpEditM',
+            url: '/Profile/ResendOtp',
             type: 'post',
-            data: { email: email },
+            data: { email: email, id: id },
             dataType: 'json',
             success: function (result) {
-                toastr.success("OTP sent successfully. Please check your email.");
+                toastr.success("Resend Done");
             },
             error: function () {
-                toastr.error("Failed to send OTP. Please try again later.");
+                toastr.error("Failed To Resend.");
             }
         });
     }

@@ -21,6 +21,7 @@ builder.Services.AddSession(option =>
     option.Cookie.IsEssential = true;
 });
 
+//Add Connection String
 builder.Services.AddDbContext<DB_SpesificationContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
@@ -29,7 +30,6 @@ builder.Services.AddDbContext<DB_SpesificationContext>(option =>
 });
 var app = builder.Build();
 
-//Add Connection String
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

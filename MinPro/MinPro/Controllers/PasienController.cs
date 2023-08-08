@@ -4,6 +4,7 @@ using MinPro.Services;
 using MinPro.viewmodels;
 using System.Drawing;
 using MinPro.Services;
+using System.Globalization;
 
 namespace MinPro.Controllers
 {
@@ -38,7 +39,10 @@ namespace MinPro.Controllers
         {
             ViewBag.Currentsort = sortOrder;
             ViewBag.CurrentPageSize = pageSize;
-            ViewBag.NameSort = string.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.NameSort = string.IsNullOrEmpty(sortOrder) ? "Name" : "";
+            ViewBag.AgeSort = sortOrder == "Age" ? "age_desc" : "age";
+            ViewBag.ChatCountSort = sortOrder == "Chat" ? "chat_desc" : "chat";
+            ViewBag.AppointmentCountSort = sortOrder == "Appointment" ? "appointment_desc" : "appointment";
 
             if (searchString != null)
             {
@@ -60,10 +64,46 @@ namespace MinPro.Controllers
                 ).ToList();
             }
 
+            //switch (sortOrder)
+            //{
+            //    case "name_desc":
+            //        data = data.OrderByDescending(a => a.Fullname).ToList();
+            //        break;
+            //    case "age":
+            //        data = data.OrderBy(a => a.Dob).ToList();
+            //        break;
+            //    case "age_desc":
+            //        data = data.OrderByDescending(a => a.Dob).ToList();
+            //        break;
+            //    case "chat":
+            //        data = data.OrderBy(a => a.ChatCount).ToList();
+            //        break;
+            //    case "chat_desc":
+            //        data = data.OrderByDescending(a => a.ChatCount).ToList();
+            //        break;
+            //    case "appointment":
+            //        data = data.OrderBy(a => a.AppointmentCount).ToList();
+            //        break;
+            //    case "appointment_desc":
+            //        data = data.OrderByDescending(a => a.AppointmentCount).ToList();
+            //        break;
+            //    default:
+            //        data = data.OrderBy(a => a.Fullname).ToList();
+            //        break;
+            //}
             switch (sortOrder)
             {
-                case "name_desc":
-                    data = data.OrderByDescending(a => a.Fullname).ToList();
+                case "Name":
+                    data = data.OrderBy(a => a.Fullname).ToList();
+                    break;
+                case "Age":
+                    data = data.OrderByDescending(a => a.Dob).ToList();
+                    break;
+                case "Chat":
+                    data = data.OrderBy(a => a.ChatCount).ToList();
+                    break;
+                case "Appointment":
+                    data = data.OrderBy(a => a.AppointmentCount).ToList();
                     break;
                 default:
                     data = data.OrderBy(a => a.Fullname).ToList();

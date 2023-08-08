@@ -84,6 +84,10 @@
     background-color: #000000;
 }
 
+#validate_Email {
+    display: block;
+    margin-top: 5px;
+}
 
 
 

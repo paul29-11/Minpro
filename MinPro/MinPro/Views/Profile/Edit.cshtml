@@ -1,39 +1,56 @@
 ﻿@using MinPro.viewmodels
 @model VMTblProfile
 
+
+@{
+    ViewData["Title"] = "Edit User";
+}
+
 <div class="card">
-  <div class="card-body">
-    <div class="card-title">@ViewData["Title"]</div>
-    <form asp-action="Edit" method="post" id="form_input">
+    <div class="card-body">
+        <div class="card-title">@ViewData["Title"]</div>
+        <form asp-action="Edit" method="post" id="form_input">
             <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
-        <div class="form-group">
-            <label for="Fullname">Full Name</label>
-            <input type="text" class="form-control" id="Fullname" name="Fullname" value="@Model.Fullname">
-        </div>
-        <div class="form-group">
-            <label for="Dob">Date of Birth</label>
-            <input type="date" class="form-control" id="Dob" name="Dob" value="@Model.Dob?.ToString("yyyy-MM-dd")">
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number</label>
-                <input type="text" class="form-control" id="phone" name="MobilePhone" value="@Model.MobilePhone">
-        </div>
-    @*    <button type="button" class="btn btn-primary" id="saveBtn">Save</button>*@
-        <div class="form-group row">
-            <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">Input</button>
-                <a class="btn btn-dark" asp-controller="Profile" asp-action="Index">Back</a>
+            <div class="form-group">
+                <label for="Fullname">Full Name</label>
+                <input type="text" class="form-control" id="Fullname" name="Fullname" value="@Model.Fullname">
+                <span id="error_Fullname" class="text-danger"></span>
             </div>
-        </div>
-    </form>
-  </div>
-
+            <div class="form-group">
+                <label for="Dob">Date of Birth</label>
+                <input type="date" class="form-control" id="Dob" name="Dob" value="@Model.Dob?.ToString("yyyy-MM-dd")" max="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                <span id="error_Dob" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone" name="MobilePhone" value="@Model.MobilePhone">
+                <span id="error_MobilePhone" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                <p align="right">
+                    <button type="submit" class="btn btn-light">Input</button>
+                    <a class="btn btn-light" asp-controller="Profile" asp-action="Index">Back</a>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
-
 
 <script>
     $("#form_input").validate({
         errorClass: "text-danger",
+        errorPlacement: function (error, element) {
+            if (element.attr("name") === "Fullname") {
+                error.appendTo($("#error_Fullname"));
+            } else if (element.attr("name") === "Dob") {
+                error.appendTo($("#error_Dob"));
+            } else if (element.attr("name") === "MobilePhone") {
+                error.appendTo($("#error_MobilePhone"));
+            } else {
+            }
+        },
         rules: {
             Fullname: {
                 required: true,
@@ -41,6 +58,9 @@
             },
             Dob: {
                 required: true,
+            },
+            MobilePhone: {
+                number:true,
             },
         },
         messages: {
@@ -50,6 +70,9 @@
             },
             Dob: {
                 required: "Tolong isi Tanggal Lahir",
+            },
+            MobilePhone: {
+                number: "Tolong isi dengan angka",
             },
         },
         submitHandler: function (form) {
@@ -79,8 +102,7 @@
                             }
                         }
                     );
-                }
-                else {
+                } else {
                     // Use toastr.error to display the error message
                     toastr.error(data.message);
                 }

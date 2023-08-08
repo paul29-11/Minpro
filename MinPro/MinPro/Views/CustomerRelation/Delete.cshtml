@@ -3,11 +3,11 @@
 
 @{
 
-    ViewData["Title"] = "Delete Blood Type";
+    ViewData["Title"] = "Delete Relation";
 }
 
 
-<div class="h4 md-4">@ViewData["Title"]</div>
+<div class="h6 md-4">@ViewData["Title"]</div>
 
 <div class="card">
     <div class="card-body">
@@ -15,15 +15,19 @@
         <form asp-action="SureDelete" method="post" id="form_delete">
             <input type="hidden" id="Id" name="Id" value="@Model.Id">
             <div class="mb-4 row">
-                <div class="col-sm-8.5">
+                <div class="col-sm-12">
                     <div class="form-group">
                         <p style="text-align:center;">Apakah Kamu Yakin Mau Hapus ?</p>
                         <p style="text-align:center; color:azure;">@Model.Name</p>
-
-
-                        <button type="submit" class="btn btn-light px-5"><i class="icon-plus"></i> DELETE!</button>
+                        <br />
+                        <br />
+                        <div>
+                            <p align="right">
+                        <button type="submit" class="btn btn-light"><i class="icon-plus"></i> DELETE!</button>
                         <a class="btn btn-light" asp-controller="Spesialisasi" asp-action="Index">Back To List</a>
                         <span asp-validation-for="Name" class="text-danger"></span>
+                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

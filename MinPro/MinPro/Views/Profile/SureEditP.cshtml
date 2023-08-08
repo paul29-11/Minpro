@@ -15,18 +15,23 @@
                 <div class="input-group">
                     <input type="password" class="form-control" id="Password" name="Password" placeholder="New Password" onchange="checkNewPasswordMatch()">
                     <div class="input-group-append">
-                        <span class="input-group-text"><span class="fa fa-lock"></span></span>
+                        <button type="button" class="btn btn-outline-secondary" onmousedown="togglePasswordVisibility()" onmouseup="resetPasswordButton()">
+                            <span id="passwordIcon" class="fa fa-eye-slash"></span>
+                        </button>
                     </div>
                 </div>
+                <span id="error_Password" class="text-danger"></span>
             </div>
-            <br />
             <div class="form-group">
                 <div class="input-group">
                     <input type="password" class="form-control" id="re_password" name="re_password" placeholder="Retype password" onchange="checkNewPasswordMatch()">
                     <div class="input-group-append">
-                        <span class="input-group-text"><span class="fa fa-lock"></span></span>
+                        <button type="button" class="btn btn-outline-secondary" onmousedown="toggleRePasswordVisibility()" onmouseup="resetRePasswordButton()">
+                            <span id="passwordIcon" class="fa fa-eye-slash"></span>
+                        </button>
                     </div>
                 </div>
+                <span id="error_re_password" class="text-danger"></span>
             </div>
 
             <div class="form-group row">
@@ -40,8 +45,72 @@
 </div>
 
 <script>
+
+    var passwordVisible = false;
+    var rePasswordVisible = false;
+
+    function togglePasswordVisibility() {
+        passwordVisible = !passwordVisible;
+        var passwordInput = $("#Password");
+        var passwordIcon = $("#passwordIcon");
+
+        if (passwordVisible) {
+            passwordInput.attr("type", "text");
+            passwordIcon.removeClass("fa-eye-slash");
+            passwordIcon.addClass("fa-eye");
+        } else {
+            passwordInput.attr("type", "password");
+            passwordIcon.removeClass("fa-eye");
+            passwordIcon.addClass("fa-eye-slash");
+        }
+    }
+
+    function toggleRePasswordVisibility() {
+        rePasswordVisible = !rePasswordVisible;
+        var rePasswordInput = $("#re_password");
+        var rePasswordIcon = $("#rePasswordIcon");
+
+        if (rePasswordVisible) {
+            rePasswordInput.attr("type", "text");
+            rePasswordIcon.removeClass("fa-eye-slash");
+            rePasswordIcon.addClass("fa-eye");
+        } else {
+            rePasswordInput.attr("type", "password");
+            rePasswordIcon.removeClass("fa-eye");
+            rePasswordIcon.addClass("fa-eye-slash");
+        }
+    }
+
+    function resetPasswordButton() {
+        // Reset password visibility when the mouse button is released
+        passwordVisible = false;
+        var passwordInput = $("#Password");
+        var passwordIcon = $("#passwordIcon");
+        passwordInput.attr("type", "password");
+        passwordIcon.removeClass("fa-eye");
+        passwordIcon.addClass("fa-eye-slash");
+    }
+
+    function resetRePasswordButton() {
+        // Reset retype password visibility when the mouse button is released
+        rePasswordVisible = false;
+        var rePasswordInput = $("#re_password");
+        var rePasswordIcon = $("#rePasswordIcon");
+        rePasswordInput.attr("type", "password");
+        rePasswordIcon.removeClass("fa-eye");
+        rePasswordIcon.addClass("fa-eye-slash");
+    }
+
 $("#form_input").validate({
         errorClass: "text-danger",
+        errorPlacement: function (error, element) {
+            if (element.attr("name") === "Password") {
+                error.appendTo($("#error_Password"));
+            } else if (element.attr("name") === "re_password") {
+                error.appendTo($("#error_re_password"));
+            } else {
+            }
+        },
         rules: {
             Password: {
                 required: true,
@@ -59,7 +128,7 @@ $("#form_input").validate({
                 minlength: "Password must be at least 8 characters long"
             },
             re_password: {
-                equalTo: "Passwords do not match"
+                equalTo: "Passwords Tidak Sama"
             }
         },
         submitHandler: function (form) {
@@ -74,16 +143,6 @@ $("#form_input").validate({
     }, "Harap Menggunakan huruf Besar,Kecil,Digit dan Special(@@$!%*?&)");
 
 
-    function checkNewPasswordMatch() {
-        var newPassword = $("#Password").val();
-        var rePassword = $("#re_password").val();
-
-        if (newPassword && newPassword !== rePassword) {
-            toastr.error("Passwords do not match");
-        } else {
-            toastr.clear(); 
-        }
-    }
 
     // Function to handle the form submission for SureEditP
     function submitPasswordChange(dataParam) {

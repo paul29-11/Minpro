@@ -108,13 +108,14 @@ namespace MinPro.Controllers
         //    return View(dataParam);
         //}
 
-        [HttpPost]
-        public async Task<IActionResult> OtpEditM(MUser dataParam)
-        {
-            string email = dataParam.Email; 
-            HttpContext.Session.SetString("EmailBaru", email);
 
-            VMResponse respon = await profileService.SendOTP(dataParam);
+        [HttpPost]
+        public async Task<IActionResult> ResendOtp(MUser dataParam)
+        {
+            string email = dataParam.Email;
+            dataParam.Email = HttpContext.Session.GetString("EmailBaru");
+
+            VMResponse respon = await profileService.ResendOTP(dataParam);
 
             if (respon.Success)
             {
@@ -123,6 +124,7 @@ namespace MinPro.Controllers
 
             return View(dataParam);
         }
+
 
 
         [HttpPost]
@@ -149,6 +151,21 @@ namespace MinPro.Controllers
             return PartialView(data);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> OtpEditM(MUser dataParam)
+        {
+            string email = dataParam.Email; 
+            HttpContext.Session.SetString("EmailBaru", email);
+
+            VMResponse respon = await profileService.SendOTP(dataParam);
+
+            if (respon.Success)
+            {
+                return Json(new { dataRespon = respon });
+            }
+
+            return View(dataParam);
+        }
 
 
 

@@ -45,12 +45,12 @@ namespace MinPro.api.Controllers
             {
                 data = db.MCustomerRelations.Where(a => a.Name == name && a.IsDelete == false && a.Id != id).FirstOrDefault();
             }
-
-            if (data != null)
-            {
-                return true;
-            }
-            else { return false; }
+            return data != null;
+            //if (data != null)
+            //{
+            //    return true;
+            //}
+            //else { return false; }
         }
 
         [HttpPost("Save")]

@@ -327,7 +327,7 @@ namespace MinPro.api.Controllers
             //user.ModifiedOn = DateTime.Now;
             //user.IsLocked = false;
             //user.ModifiedBy = IdUser;
-            List<TToken> tokens = db.TTokens.Where(t => t.IsExpired != true && t.IsDelete != true).ToList();
+            List<TToken> tokens = db.TTokens.Where(t => t.IsExpired == false && t.IsDelete == false).ToList();
 
             foreach (var token in tokens)
             {
@@ -393,7 +393,81 @@ namespace MinPro.api.Controllers
             return respon;
         }
 
+        [HttpPut("ResendOTP")]
+        public VMResponse ResendOTP(TToken data)
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(100000, 999999);
+            DateTime currentTime = DateTime.Now;
 
+            //MUser user = db.MUsers.Where(a=>a.Id == data.Id).FirstOrDefault();
+
+            //user.Email = data.Email;
+            //user.ModifiedOn = DateTime.Now;
+            //user.IsLocked = false;
+            //user.ModifiedBy = IdUser;
+            List<TToken> tokens = db.TTokens.Where(t => t.IsExpired == false && t.IsDelete == false).ToList();
+
+            foreach (var token in tokens)
+            {
+                    token.IsExpired = true;
+                    db.Update(token);
+            }
+
+
+            TToken Newtoken = new TToken();
+
+            Newtoken.Token = randomNumber.ToString();
+            Newtoken.ExpiredOn = currentTime.AddMinutes(3);
+            Newtoken.UsedFor = "Edit Email";
+            Newtoken.CreatedOn = DateTime.Now;
+            Newtoken.IsExpired = false;
+            Newtoken.IsDelete = false;
+            Newtoken.CreatedBy = IdUser;
+            Newtoken.Email = data.Email;
+            Newtoken.UserId = data.Id;
+
+
+
+            var emailVerif = new MimeMessage();
+            emailVerif.From.Add(new MailboxAddress("Arlo White", "darron.moen@ethereal.email"));
+            emailVerif.To.Add(new MailboxAddress("", data?.Email));
+            emailVerif.Subject = "Reset Email";
+            emailVerif.Body = new TextPart(TextFormat.Html)
+            {
+                Text = @"This your Code OTP : " + Newtoken.Token
+            };
+
+            using var smtp = new SmtpClient();
+            smtp.Connect("smtp.ethereal.email", 587, false); // Use SSL/TLS encryption
+            smtp.Authenticate("darron.moen@ethereal.email", "2wjqZtd7G6NAe6FjRG");
+            smtp.Send(emailVerif); // Send the email
+            smtp.Disconnect(true); // Disconnect from the server
+            //using var client = new SmtpClient();
+            //client.Connect("smtp.mail.yahoo.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
+            //client.Authenticate("d.rizky67@yahoo.co.id", "fzikayknrugvcvin");
+            //client.Send(emailVerif);
+            //client.Disconnect(true);
+
+
+            try
+            {
+                //db.Update(user);
+                //db.SaveChanges();
+                db.TTokens.Add(Newtoken);
+                db.SaveChanges();
+
+
+
+                respon.Message = "Data successfully added";
+            }
+            catch (Exception e)
+            {
+                respon.Success = false;
+                respon.Message = "Failed saved : " + e.Message;
+            }
+            return respon;
+        }
 
     }
 }

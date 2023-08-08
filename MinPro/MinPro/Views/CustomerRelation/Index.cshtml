@@ -111,17 +111,19 @@
     })
 
     $("#btn_create").click(function () {
-        $("#modal_body").empty()
-        $("#modal_body").load("/CustomerRelation/Create")
-        $("#modal").modal("show")
+        $("#modal_title_sm").text("Customer Relation")
+        $("#modal_body_sm").empty()
+        $("#modal_body_sm").load("/CustomerRelation/Create")
+        $("#modal_sm").modal("show")
     })
 
     $(".btn_edit").click(function () {
         var id = $(this).attr("dataid")
 
-        $("#modal_body").empty()
-        $("#modal_body").load("/CustomerRelation/Edit?id=" + id)
-        $("#modal").modal("show")
+        $("#modal_title_sm").text("Customer Relation")
+        $("#modal_body_sm").empty()
+        $("#modal_body_sm").load("/CustomerRelation/Edit?id=" + id)
+        $("#modal_sm").modal("show")
     })
 
     $(".btn_detail").click(function () {
@@ -134,7 +136,7 @@
 
     $(".btn_delete").click(function () {
         var id = $(this).attr("dataid")
-
+        $("#modal_title_sm").text("Customer Relation")
         $("#modal_body_sm").empty()
         $("#modal_body_sm").load("/CustomerRelation/Delete?id=" + id)
         $("#modal_sm").modal("show")

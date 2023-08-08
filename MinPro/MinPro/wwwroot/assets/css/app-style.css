@@ -3672,6 +3672,10 @@ table.grid td {
 
     </style >
     }
+    #validate_Email {
+        display: block;
+        margin-top: 5px;
+    }
 }
 
 

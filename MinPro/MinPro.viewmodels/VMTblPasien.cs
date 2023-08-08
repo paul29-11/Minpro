@@ -22,6 +22,8 @@ namespace MinPro.viewmodels
         public string? RhesusType { get; set; }
         public decimal? Height { get; set; }
         public decimal? Weight { get; set; }
+        public int ChatCount { get; set; }
+        public int AppointmentCount { get; set; }
         public long CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
         public long? ModifiedBy { get; set; }
